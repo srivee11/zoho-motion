@@ -37,21 +37,21 @@ export default function Home () {
           <h2 className=' text-gray-1000 font-Mont capitalize text-3xl tracking-[-1px] font-bold md:text-4xl lg:text-5xl'>
             Your life's work, powered by our life's work
           </h2>
-          <p className=' text-gray-900 font-medium text-2xl max-w-md py-4'>
+          <p className=' text-gray-900 font-medium text-2xl w-full   py-4'>
             A unique and powerful software suite to transform the way you work.
             Designed for businesses of all sizes, built by a company that{' '}
             <span className=' font-semibold'> values your privacy.</span>
           </p>
 
           <div className='flex flex-col items-center gap-4 sm:flex-row'>
-            <button className='group flex items-center w-fit px-3 py-2 font-medium rounded-md cursor-pointer capitalize text-gray-0 border-2 border-collapse bg-blue-main border-blue-main hover:bg-blue-accent'>
+            <button className='group primary-btn '>
               get started for free
               <span className='group-hover:translate-x-1 transition-transform duration-300 '>
                 <MdOutlineKeyboardArrowRight className=' ml-1' size={24} />
               </span>
             </button>
 
-            <button className='group flex items-center w-fit px-3 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse text-blue-main border-blue-main bg-gray-0 hover:bg-gray-100'>
+            <button className='group secondary-btn'>
               explore all products
               <span className='group-hover:translate-x-1 transition-transform duration-300 '>
                 <MdOutlineKeyboardArrowRight className=' ml-1' size={24} />
