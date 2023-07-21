@@ -4,6 +4,7 @@ import { BsSearch} from 'react-icons/bs'
 import { FiGlobe} from 'react-icons/fi'
 import { Link } from 'react-scroll'
 
+
 // import Zoho_Logo from '../assets/main icons/Zoho_Logo_Motion.svg'
 
 import { motion, scroll } from 'framer-motion'
@@ -133,7 +134,7 @@ export default function NavBar () {
         {links.map(({ id, link, offset }) => (
           <span
             key={id}
-            className=' mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-gray-900 bg-opacity-0 backdrop-blur-md  hover:bg-gray-300 transition-all duration-200 capitalize '
+            className=' mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-gray-700 bg-opacity-0 backdrop-blur-md  hover:bg-gray-300 duration-200 capitalize '
           >
             <Link to={link} smooth offset={offset} duration={500}>
           
@@ -144,8 +145,8 @@ export default function NavBar () {
 
       </div>
 
-        <ul className='flex'>
-          <li> <BsSearch size={28} /> </li>
+        <ul className='flex  text-gray-700'>
+          <li> <BsSearch size={28}  /> </li>
           <li> <FiGlobe size={28} /> </li>
           <li> <a className=' capitalize mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-blue-main  border-blue-main border-2 border-collapse' > sign in </a>  </li>
           <li> <a className=' capitalize mx-2 px-4 py-2 font-medium rounded-md cursor-pointer bg-blue-main text-gray-0 border-blue-main border-2' > sign up </a>  </li>

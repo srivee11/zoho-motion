@@ -9,6 +9,9 @@ import creator from "../src/assets/main icons/creator.svg";
 import people from "../src/assets/main icons/people.svg";
 
 
+import {FaChevronRight} from 'react-icons/fa'
+
+
 export default function FeaturedApps() {
     
     const techs = [
@@ -59,25 +62,26 @@ export default function FeaturedApps() {
       return (
         <div
           name="experience"
-          className="  w-full h-min flex flex-col justify-start items-center bg-gradient-to-t from-gray-1000 via-gray-1000 to-gray-900 "
+          className="  w-full h-min flex flex-col justify-start items-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-green-300 via-blue-500 to-purple-600 "
         >
           <div className="max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white">
             <div>
-              <h3 className=" capitalize text-3xl font-bold border-b-4  text-gray-0  p-2 inline">
+              <h3 className=" capitalize text-3xl font-bold tracking-wide  text-gray-0  p-2 ">
               our featured apps
 
               </h3>
             </div>
     
-            <div className="w-full flex flex-wrap gap-4 text-center p-8 justify-center items-center">
+            <div className="w-full flex flex-wrap gap-6 text-center p-8 justify-center items-center">
               {techs.map(({ id, src, title, description }) => (
                 <div
                   key={id}
-                  className={"  min-h-[300px] w-full max-w-[300px] bg-gray-0 shadow-md hover:scale-105 duration-500 px-4 py-2 rounded-md"}
+                  className={" group  min-h-[300px] w-full max-w-[300px] bg-gray-0 shadow-md  px-4 py-2 rounded-md flex flex-col items-center"}
                 >
                   <img src={src} alt="" className="w-[96px] mx-auto" />
                   <p className=" capitalize text-2xl font-Mont font-bold mt-4 tracking-wide inline-block">{title}</p>
                   <p className=" text-base font-normal mt-4 text-gray-700 ">{description}</p>
+                  <a className="trynow-btn  "> Try Now <FaChevronRight className=' ml-2 group-hover:translate-x-1 transition-transform duration-300 ' size={16}/>   </a>
                 </div>
               ))}
             </div>
