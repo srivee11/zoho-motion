@@ -24,7 +24,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 *, *::before, *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  border: 1pt solid rgba(255, 0, 0, 0.5) !important;
+  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important; */
 }
 
 
@@ -35,23 +35,18 @@ p, h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
   }
 
-  body {
-
-    
-
-  }
-
+ 
 }
 
 @layer components {
   .primary-btn {
-    @apply flex items-center w-fit px-3 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse  text-gray-0 bg-main border-main hover:bg-accent
+    @apply flex items-center w-fit px-3 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse  text-white bg-main border-main hover:bg-accent hover:border-accent
     
     ;
   }
 
   .secondary-btn {
-    @apply flex items-center w-fit px-3 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse text-main border-main bg-gray-0 hover:bg-gray-100
+    @apply flex items-center w-fit px-3 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse text-main border-main bg-white hover:bg-gray-100
     ;
   }
 

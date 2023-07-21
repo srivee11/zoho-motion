@@ -42,7 +42,7 @@ export default function NavBar () {
   ]
 
   return (
-    <div className=' fixed top-[0%] z-10 flex justify-between items-center w-[100%] h-16 px-4 py-2 bg-gray-0/90 text-gray-900 backdrop-blur-md shadow-sm'>
+    <div className=' fixed top-[0%] z-10 flex justify-between items-center w-[100%] h-16 px-4 py-2 bg-white/90 text-gray-900 backdrop-blur-md shadow-sm'>
       <motion.span variants={svg_anime} initial='initial' animate='animate'>
         <svg 
           width='250'
@@ -130,11 +130,11 @@ export default function NavBar () {
         </svg>
       </motion.span>
 
-      <div className=' hidden bg-opacity-0 md:flex'>
+      <div className=' hidden  md:flex'>
         {links.map(({ id, link, offset }) => (
           <span
             key={id}
-            className=' mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-gray-700 bg-opacity-0 backdrop-blur-md  hover:bg-gray-300 duration-200 capitalize '
+            className=' mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-gray-700 bg-white/0 backdrop-blur-md hover:bg-gray-200  duration-200 capitalize '
           >
             <Link to={link} smooth offset={offset} duration={500}>
           
@@ -149,7 +149,7 @@ export default function NavBar () {
           <li> <BsSearch size={28}  /> </li>
           <li> <FiGlobe size={28} /> </li>
           <li> <a className=' capitalize mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-main  border-main border-2 border-collapse' > sign in </a>  </li>
-          <li> <a className=' capitalize mx-2 px-4 py-2 font-medium rounded-md cursor-pointer bg-main text-gray-0 border-main border-2' > sign up </a>  </li>
+          <li> <a className=' capitalize mx-2 px-4 py-2 font-medium rounded-md cursor-pointer bg-main text-gray-100 border-main border-2' > sign up </a>  </li>
 
         </ul>
 
