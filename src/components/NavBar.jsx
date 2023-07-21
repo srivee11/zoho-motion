@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { BsSearch} from 'react-icons/bs'
-import { FiGlobe} from 'react-icons/fi'
+import { FiSearch } from 'react-icons/fi'
+import { FiGlobe } from 'react-icons/fi'
 import { Link } from 'react-scroll'
-
 
 // import Zoho_Logo from '../assets/main icons/Zoho_Logo_Motion.svg'
 
@@ -37,14 +36,14 @@ export default function NavBar () {
 
   const links = [
     { id: 1, link: 'home' },
-    { id: 2, link: 'Products' },
-    { id: 3, link: 'customers', offset: -100 },
+    { id: 2, link: 'products' },
+    { id: 3, link: 'customers', offset: -100 }
   ]
 
   return (
-    <div className=' fixed top-[0%] z-10 flex justify-between items-center w-[100%] px-20 bg-white/90 text-gray-900 backdrop-blur-md shadow-sm'>
+    <div className=' fixed top-[0%] z-10 flex justify-between items-center w-[100%]  bg-white/90 text-gray-900 backdrop-blur-md shadow-sm px-1 sm:px-10 md:px-20'>
       <motion.span variants={svg_anime} initial='initial' animate='animate'>
-        <svg 
+        <svg
           width='250'
           height='74'
           viewBox='0 0 250 74'
@@ -137,21 +136,30 @@ export default function NavBar () {
             className=' mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-gray-700 bg-white/0 backdrop-blur-md hover:bg-gray-200  duration-200 capitalize '
           >
             <Link to={link} smooth offset={offset} duration={500}>
-          
               {link}
             </Link>
           </span>
         ))}
-
       </div>
 
-        <ul className='hidden  lg:flex lg:items-center lg:gap-2 text-gray-600'>
-          <li> <BsSearch size={28}  /> </li>
-          <li> <FiGlobe size={28} /> </li>
-          <li> <a className=' secondary-btn ' > sign in </a>  </li>
-          <li> <a className=' primary-btn ' > sign up </a>  </li>
-
-        </ul>
+      <ul className='hidden  lg:flex lg:items-center lg:gap-2 text-gray-600'>
+        <li>
+         
+          <FiSearch size={24} />
+        </li>
+        <li>
+        
+          <FiGlobe size={24} />
+        </li>
+        <li>
+         
+          <a className=' secondary-btn '> sign in </a>
+        </li>
+        <li>
+      
+          <a className=' primary-btn '> sign up </a>
+        </li>
+      </ul>
 
       <div
         onClick={() => setNav(!nav)}
@@ -159,6 +167,26 @@ export default function NavBar () {
       >
         {nav ? <FaTimes size={28} /> : <FaBars size={28} />}
       </div>
+
+      {nav && (
+        <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-fit bg-gradient-to-b bg-white text-gray-700'>
+          {links.map(({ id, link }) => (
+            <li
+              key={id}
+              className='px-4 cursor-pointer capitalize py-6 text-2xl'
+            >
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={500}
+              >
+                {link}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   )
 }
