@@ -42,7 +42,7 @@ export default function NavBar () {
   ]
 
   return (
-    <div className=' fixed top-[0%] z-10 flex justify-between items-center w-[100%] h-16 px-4 py-2 bg-white/90 text-gray-900 backdrop-blur-md shadow-sm'>
+    <div className=' fixed top-[0%] z-10 flex justify-between items-center w-[100%] px-20 bg-white/90 text-gray-900 backdrop-blur-md shadow-sm'>
       <motion.span variants={svg_anime} initial='initial' animate='animate'>
         <svg 
           width='250'
@@ -130,7 +130,7 @@ export default function NavBar () {
         </svg>
       </motion.span>
 
-      <div className=' hidden  md:flex'>
+      <div className=' hidden  lg:flex lg:gap-2'>
         {links.map(({ id, link, offset }) => (
           <span
             key={id}
@@ -145,17 +145,17 @@ export default function NavBar () {
 
       </div>
 
-        <ul className='flex  text-gray-700'>
+        <ul className='hidden  lg:flex lg:gap-2 text-gray-700'>
           <li> <BsSearch size={28}  /> </li>
           <li> <FiGlobe size={28} /> </li>
-          <li> <a className=' capitalize mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-main  border-main border-2 border-collapse' > sign in </a>  </li>
-          <li> <a className=' capitalize mx-2 px-4 py-2 font-medium rounded-md cursor-pointer bg-main text-gray-100 border-main border-2' > sign up </a>  </li>
+          <li> <a className=' secondary-btn ' > sign in </a>  </li>
+          <li> <a className=' primary-btn ' > sign up </a>  </li>
 
         </ul>
 
       <div
         onClick={() => setNav(!nav)}
-        className='pr-4 cursor-pointer z-10 md:hidden text-gray-900'
+        className='pr-4 cursor-pointer z-10 lg:hidden text-gray-700'
       >
         {nav ? <FaTimes size={28} /> : <FaBars size={28} />}
       </div>
