@@ -20,7 +20,7 @@ export default {
         main: '#2962FF',
         accent: '#1345D1',
         light: '#64BDFF',
-
+        
       
       
       

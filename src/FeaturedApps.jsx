@@ -62,7 +62,7 @@ export default function FeaturedApps() {
       return (
         <div
           name="experience"
-          className="  w-full h-min flex flex-col justify-start items-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black "
+          className="  w-full h-min flex flex-col justify-start items-center bg-gradient-to-b from-slate-800 via-gray-900 to-black"
         >
           <div className="max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white">
             <div>
@@ -72,16 +72,17 @@ export default function FeaturedApps() {
               </h3>
             </div>
     
-            <div className="w-full flex flex-wrap gap-6 text-center p-8 justify-center items-center">
+            <div className="  w-full flex flex-wrap gap-6 text-center p-8 justify-center items-center">
               {techs.map(({ id, src, title, description }) => (
                 <div
                   key={id}
-                  className={" group  min-h-[300px] w-full max-w-[300px] bg-white shadow-md  px-4 py-2 rounded-md flex flex-col items-center"}
+                  className={"product-card relative group  min-h-[300px] w-full max-w-[300px] bg-white shadow-md  px-4 py-2 rounded-md flex flex-col items-center overflow-hidden"}
                 >
                   <img src={src} alt="" className="w-[96px] mx-auto" />
                   <p className=" capitalize text-2xl font-Mont font-bold mt-4 tracking-wide inline-block text-gray-900">{title}</p>
                   <p className=" text-base font-normal mt-4 text-gray-700 ">{description}</p>
-                  <a className="trynow-btn  "> Try Now <FaChevronRight className=' ml-2 group-hover:translate-x-1 transition-transform duration-300 ' size={16}/>   </a>
+                  <a className=" trynow-btn  "> Try Now <FaChevronRight className=' ml-2 group-hover:translate-x-1 transition-transform duration-300 ' size={16}/>   </a>
+                  <span className=' absolute bottom-[0%] left-[0%] w-full h-2 translate-y-[100%] bg-main group-hover:translate-y-[0%] transition-transform duration-300 ' ></span>
                 </div>
               ))}
             </div>

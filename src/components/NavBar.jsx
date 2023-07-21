@@ -145,7 +145,7 @@ export default function NavBar () {
 
       </div>
 
-        <ul className='hidden  lg:flex lg:gap-2 text-gray-700'>
+        <ul className='hidden  lg:flex lg:items-center lg:gap-2 text-gray-600'>
           <li> <BsSearch size={28}  /> </li>
           <li> <FiGlobe size={28} /> </li>
           <li> <a className=' secondary-btn ' > sign in </a>  </li>
