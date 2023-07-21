@@ -3,7 +3,8 @@ import NavBar from './components/NavBar'
 
 import { ScrollLink } from "react-scroll";
 import Home from './components/Home';
-import FeaturedApps from './FeaturedApps';
+import FeaturedApps from './components/FeaturedApps';
+import Zoho_one from './components/Zoho_one';
 
 
 function App () {
@@ -12,6 +13,7 @@ function App () {
       <NavBar/>
       <Home/>
       <FeaturedApps/>
+      <Zoho_one/>
     </div>
   )
 }

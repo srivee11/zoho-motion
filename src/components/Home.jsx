@@ -27,10 +27,7 @@ export default function Home () {
   }
 
   return (
-    <div
-      name='home'
-      className=' w-100% h-fit flex flex-col items-center bg-white text-black'
-    >
+    <div  name='home' className=' w-100% h-fit flex flex-col items-center bg-white text-black'>
       <div className=' max-w-screen-lg  flex flex-col gap-4 justify-center items-center px-8 pt-32 pb-8  md:flex-row-reverse md:pb-16 '>
         <motion.div variants={float_anime} initial='initial' animate='animate' className=' mx-auto w-[60%] md:w-[40%] '>
           <img src={HeroImage} alt='my zoho3d'></img>

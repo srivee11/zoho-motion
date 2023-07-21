@@ -1,12 +1,11 @@
 import React from 'react'
 
-import workplace from "../src/assets/main icons/workplace.svg";
-import crm from "../src/assets/main icons/crm.svg";
-import books from "../src/assets/main icons/books.svg";
-import one from "../src/assets/main icons/one.svg";
-import helpdesk from "../src/assets/main icons/helpdesk.svg";
-import creator from "../src/assets/main icons/creator.svg";
-import people from "../src/assets/main icons/people.svg";
+import workplace from "../assets/main icons/workplace.svg";
+import crm from "../assets/main icons/crm.svg";
+import books from "../assets/main icons/books.svg";
+import helpdesk from "../assets/main icons/helpdesk.svg";
+import creator from "../assets/main icons/creator.svg";
+import people from "../assets/main icons/people.svg";
 
 
 import {FaChevronRight} from 'react-icons/fa'
@@ -62,11 +61,11 @@ export default function FeaturedApps() {
       return (
         <div
           name="products"
-          className="  w-full h-min flex flex-col justify-start items-center bg-gradient-to-b from-slate-800 via-gray-900 to-black"
+          className="  w-full h-fit flex flex-col justify-start items-center bg-gradient-to-b from-slate-800 via-gray-900 to-black"
         >
           <div className="max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32">
             <div>
-              <h3 className=" capitalize text-2xl font-bold tracking-wide  text-white  p-2 sm:text-3xl ">
+              <h3 className=" capitalize text-2xl font-Mont font-bold tracking-wide  text-white  p-2 sm:text-3xl ">
               our featured apps
 
               </h3>
