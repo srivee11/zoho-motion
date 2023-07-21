@@ -34,10 +34,10 @@ export default function Home () {
         </motion.div>
 
         <div className=' flex flex-col justify-center h-full md:w-[60%] '>
-          <h2 className=' text-gray-1000 font-Mont capitalize text-3xl tracking-[-1px] font-bold md:text-4xl lg:text-5xl'>
+          <h2 className=' text-gray-900 font-Mont capitalize text-3xl tracking-[-1px] font-bold md:text-4xl lg:text-5xl'>
             Your life's work, powered by our life's work
           </h2>
-          <p className=' text-gray-900 font-medium text-2xl w-full   py-4'>
+          <p className=' text-gray-700 text-2xl w-full   py-4'>
             A unique and powerful software suite to transform the way you work.
             Designed for businesses of all sizes, built by a company that{' '}
             <span className=' font-semibold'> values your privacy.</span>

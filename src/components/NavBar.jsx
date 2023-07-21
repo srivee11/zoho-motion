@@ -41,7 +41,7 @@ export default function NavBar () {
   ]
 
   return (
-    <div className=' fixed top-[0%] z-10 flex justify-between items-center w-[100%] h-16 px-4 py-2 bg-gray-0 text-gray-1000 shadow-lg'>
+    <div className=' fixed top-[0%] z-10 flex justify-between items-center w-[100%] h-16 px-4 py-2 bg-gray-0/90 text-gray-900 backdrop-blur-md shadow-sm'>
       <motion.span variants={svg_anime} initial='initial' animate='animate'>
         <svg 
           width='250'
@@ -129,20 +129,20 @@ export default function NavBar () {
         </svg>
       </motion.span>
 
-      <ul className=' hidden md:flex'>
+      <div className=' hidden bg-opacity-0 md:flex'>
         {links.map(({ id, link, offset }) => (
-          <li
+          <span
             key={id}
-            className=' mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-gray-900  hover:bg-gray-300 transition-all duration-200 capitalize '
+            className=' mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-gray-900 bg-opacity-0 backdrop-blur-md  hover:bg-gray-300 transition-all duration-200 capitalize '
           >
             <Link to={link} smooth offset={offset} duration={500}>
           
               {link}
             </Link>
-          </li>
+          </span>
         ))}
 
-      </ul>
+      </div>
 
         <ul className='flex'>
           <li> <BsSearch size={28} /> </li>
