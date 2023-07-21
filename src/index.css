@@ -45,18 +45,18 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @layer components {
   .primary-btn {
-    @apply flex items-center w-fit px-3 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse  text-gray-0 bg-blue-main border-blue-main hover:bg-blue-accent
+    @apply flex items-center w-fit px-3 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse  text-gray-0 bg-main border-main hover:bg-accent
     
     ;
   }
 
   .secondary-btn {
-    @apply flex items-center w-fit px-3 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse text-blue-main border-blue-main bg-gray-0 hover:bg-gray-100
+    @apply flex items-center w-fit px-3 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse text-main border-main bg-gray-0 hover:bg-gray-100
     ;
   }
 
   .trynow-btn {
-    @apply flex items-center justify-center w-fit mt-4 px-3 py-2 font-medium capitalize  text-blue-main 
+    @apply flex items-center justify-center w-fit mt-4 px-3 py-2 font-medium capitalize  text-main 
     ;
   }
 

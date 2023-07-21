@@ -148,8 +148,8 @@ export default function NavBar () {
         <ul className='flex  text-gray-700'>
           <li> <BsSearch size={28}  /> </li>
           <li> <FiGlobe size={28} /> </li>
-          <li> <a className=' capitalize mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-blue-main  border-blue-main border-2 border-collapse' > sign in </a>  </li>
-          <li> <a className=' capitalize mx-2 px-4 py-2 font-medium rounded-md cursor-pointer bg-blue-main text-gray-0 border-blue-main border-2' > sign up </a>  </li>
+          <li> <a className=' capitalize mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-main  border-main border-2 border-collapse' > sign in </a>  </li>
+          <li> <a className=' capitalize mx-2 px-4 py-2 font-medium rounded-md cursor-pointer bg-main text-gray-0 border-main border-2' > sign up </a>  </li>
 
         </ul>
 
