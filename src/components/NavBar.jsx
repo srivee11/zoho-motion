@@ -41,7 +41,7 @@ export default function NavBar () {
   ]
 
   return (
-    <div className=' fixed top-[0%] z-10 flex justify-between items-center w-[100%]  bg-white/90 text-gray-900 backdrop-blur-md shadow-sm px-1 sm:px-10 md:px-20'>
+    <div className=' fixed top-[0%] z-10 flex justify-between items-center w-[100%]  bg-white text-gray-900 backdrop-blur-md shadow-sm px-1 sm:px-10 md:px-20'>
       <motion.span variants={svg_anime} initial='initial' animate='animate'>
         <svg
           width='250'
@@ -133,7 +133,7 @@ export default function NavBar () {
         {links.map(({ id, link, offset }) => (
           <span
             key={id}
-            className=' mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-gray-700 bg-white/0 backdrop-blur-md hover:bg-gray-200  duration-200 capitalize '
+            className=' mx-2 px-4 py-2 font-medium rounded-md cursor-pointer text-gray-700  backdrop-blur-md hover:bg-gray-200  duration-200 capitalize '
           >
             <Link to={link} smooth offset={offset} duration={500}>
               {link}

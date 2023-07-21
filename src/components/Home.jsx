@@ -28,22 +28,22 @@ export default function Home () {
 
   return (
     <div  name='home' className=' w-100% h-fit flex flex-col items-center bg-white text-black'>
-      <div className=' max-w-screen-lg  flex flex-col gap-4 justify-center items-center px-8 pt-32 pb-8  md:flex-row-reverse md:pb-16 '>
+      <div className=' max-w-screen-lg  flex flex-col  justify-center items-center px-8 pt-32 pb-8  md:flex-row-reverse md:pb-24 md:pt-40'>
         <motion.div variants={float_anime} initial='initial' animate='animate' className=' mx-auto w-[60%] md:w-[40%] '>
           <img src={HeroImage} alt='my zoho3d'></img>
         </motion.div>
 
         <div className=' flex flex-col  gap-2 justify-center h-full md:w-[60%] '>
-          <h2 className=' text-gray-900 font-Mont capitalize text-2xl tracking-[-1px] font-bold md:text-4xl lg:text-5xl'>
+          <h2 className=' text-gray-900 font-Mont capitalize mt-6 text-2xl tracking-[-1px] font-bold md:text-4xl lg:text-5xl'>
             Your life's work, powered by our life's work
           </h2>
           <p className=' text-gray-700  w-full py-4 text-xl md:text-2xl lg:text-2xl'>
-            A unique and powerful software suite to transform the way you work.
-            Designed for businesses of all sizes, built by a company that{' '}
+             powerful software suite to transform the way you work.
+            Designed for businesses of all sizes, built by a company that
             <span className=' font-semibold'> values your privacy.</span>
           </p>
 
-          <div className='flex flex-col items-center gap-4 sm:flex-row sm:justify-center'>
+          <div className='flex flex-col items-center gap-4 sm:flex-row sm:self-center sm:justify-center '>
             <button className='group primary-btn '>
               get started for free
               <span className='group-hover:translate-x-1 transition-transform duration-300 '>
