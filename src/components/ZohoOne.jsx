@@ -30,7 +30,7 @@ export default function () {
         <div className=' absolute top-0 mx-auto w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
         <div className=' absolute top-64 -left-32 mx-auto w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
       </div>
-      <div className=' relative bg-white/90 border-2 border-gray-100  backdrop-blur-lg max-w-[700px] flex flex-col gap-4 justify-center items-center px-8 py-10 rounded-2xl overflow-clip shadow-lg md:my-16 lg:items-start lg:my-24 lg:px-24'>
+      <div className=' relative bg-white/80 border-2 border-gray-200  backdrop-blur-md max-w-[700px] flex flex-col gap-4 justify-center items-center px-8 py-10 rounded-2xl overflow-clip shadow-lg md:my-16 lg:items-start lg:my-24 lg:px-24'>
         <div className=' mx-auto w-[40%] md:w-[40%] '>
           <img
             src={zoho_one_icon}
@@ -41,7 +41,7 @@ export default function () {
         <h3 className='w-full  text-center capitalize text-2xl font-Mont font-bold tracking-wide  text-gray-900  p-2 sm:text-3xl '>
           zoho one 
         </h3>
-        <p className=' w-full'>
+        <p className=' w-full text-lg '>
           The all-in-one business suite to run your entire business with our unified cloud software,
           designed to help you break down silos between all departments and increase
           organizational efficiency.

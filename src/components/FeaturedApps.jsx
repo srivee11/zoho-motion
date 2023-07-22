@@ -79,6 +79,7 @@ export default function FeaturedApps() {
                 >
                   <img src={src} alt="" className="w-[96px] mx-auto" />
                   <p className=" capitalize text-2xl font-Mont font-bold mt-4 tracking-wide inline-block text-gray-900">{title}</p>
+                  <hr className=' mt-1 w-[30%] h-[1px] border border-gray-200 rounded-full  '></hr>
                   <p className=" text-base font-normal mt-4 text-gray-700 ">{description}</p>
                   <a className=" trynow-btn  "> Try Now <FaChevronRight className='translate-x-1 group-hover:translate-x-2 transition-transform duration-300 ease-in-out ' size={16}/>   </a>
                   <span className=' absolute bottom-[0%] left-[0%] w-full h-2 translate-y-[100%] bg-main/90 group-hover:translate-y-[0%] transition-transform duration-300 ease-in-out ' ></span>
