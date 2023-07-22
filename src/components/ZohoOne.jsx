@@ -24,7 +24,7 @@ export default function () {
   return (
     <div
       name='zoho_one_id'
-      className='  w-full min-h-screen flex flex-col items-center justify-center bg-white text-black'
+      className=' relative  w-full h-fit flex flex-col items-center justify-center bg-white text-black'
     >
       <div className=' relative w-full max-w-lg  h-fit '>
         <div className=' absolute top-0 mx-auto w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
@@ -70,6 +70,10 @@ export default function () {
           </span>
         </button>
       </div>
+
+      <hr className=' absolute bottom-0 mt-1 w-[50%] h-[1px] border border-gray-200 rounded-full  '></hr>
+
+
     </div>
   )
 }

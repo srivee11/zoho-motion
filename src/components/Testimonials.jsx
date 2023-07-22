@@ -15,7 +15,7 @@ export default function Testimonials () {
 
   return (
     <div className=' w-full mx-auto h-fit flex flex-col items-center justify-center'>
-      <div className='max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
+      <div className=' relative max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
         <h3 className=' capitalize text-2xl font-Mont font-bold tracking-wide text-gray-900  p-2 sm:text-3xl'>
           More than
           <span className='  text-main/90'> 80 Million+ </span>
@@ -58,6 +58,10 @@ export default function Testimonials () {
             </span>
           </button>
         </div>
+
+        <hr className=' absolute bottom-0 mt-1 w-[70%] h-[1px] border border-gray-200 rounded-full  '></hr>
+
+
       </div>
     </div>
   )
