@@ -36,8 +36,9 @@ h6 {
 *::before,
 *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  border: 1pt solid rgba(255, 0, 0, 0.5) !important;
+  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important; */
 }
+
 
 @layer base {
   html {
@@ -47,11 +48,11 @@ h6 {
 
 @layer components {
   .primary-btn {
-    @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse  text-white bg-main border-main hover:bg-accent hover:border-accent;
+    @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse  text-white bg-main border-main hover:bg-accent hover:border-accent transition-all;
   }
 
   .secondary-btn {
-    @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse text-main border-main bg-white hover:bg-gray-100;
+    @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse text-main border-main bg-white hover:bg-slate-50 transition-all;
   }
 
   .trynow-btn {
