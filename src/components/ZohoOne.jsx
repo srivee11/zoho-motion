@@ -30,7 +30,7 @@ export default function () {
         <div className=' absolute top-0 mx-auto w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
         <div className=' absolute top-64 -left-32 mx-auto w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
       </div>
-      <div className=' relative bg-white max-w-screen-sm  flex flex-col gap-4 justify-center items-center px-8 py-10 md:rounded-md md:shadow-lg md:my-16 lg:items-start lg:my-24 lg:px-24'>
+      <div className=' relative bg-white/90 border-2 border-gray-100  backdrop-blur-lg max-w-[700px] flex flex-col gap-4 justify-center items-center px-8 py-10 rounded-2xl overflow-clip shadow-lg md:my-16 lg:items-start lg:my-24 lg:px-24'>
         <div className=' mx-auto w-[40%] md:w-[40%] '>
           <img
             src={zoho_one_icon}
@@ -38,22 +38,22 @@ export default function () {
             alt='my_zoho_1'
           />
         </div>
-        <h3 className='w-full  capitalize text-2xl font-Mont font-bold tracking-wide  text-gray-900  p-2 sm:text-3xl '>
-          zoho one: the all-in-one business suite
+        <h3 className='w-full  text-center capitalize text-2xl font-Mont font-bold tracking-wide  text-gray-900  p-2 sm:text-3xl '>
+          zoho one 
         </h3>
         <p className=' w-full'>
-          Run your entire business on Zoho One with our unified cloud software,
-          designed to help you break down silos between departments and increase
+          The all-in-one business suite to run your entire business with our unified cloud software,
+          designed to help you break down silos between all departments and increase
           organizational efficiency.
         </p>
 
-        <p className='w-full'>
+        <blockquote className=' relative w-full h-fit py-8 px-8 flex items-center justify-center font-bold tracking-wide text-left text-lg  lg:text-xl lg:text-center'>
           You can be a startup, mid-sized company, or an enterprise—Zoho One is
           a boon for all.
-        </p>
+        </blockquote>
 
         <div className=' flex flex-row gap-3 md:self-center'>
-          <div className=' w-[30%] max-h-[160px] rounded-md overflow-clip '>
+          <div className=' w-[30%] max-h-[160px] rounded-xl border-2 border-gray-100 overflow-clip '>
             <img src={young_ceo} className=' w-full' alt='my_zoho_1' />
           </div>
           <div className='  w-[70%] flex flex-col justify-center gap-2 '>
