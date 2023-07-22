@@ -36,9 +36,8 @@ h6 {
 *::before,
 *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important; */
+  border: 1pt solid rgba(255, 0, 0, 0.5) !important;
 }
-
 
 @layer base {
   html {
@@ -58,15 +57,7 @@ h6 {
   .trynow-btn {
     @apply flex items-center justify-center w-fit mt-4 px-3 py-2 font-medium capitalize  text-main;
   }
-
-
-
-
- 
 }
-
-
-
 
 blockquote::before {
   content: open-quote;
@@ -94,4 +85,153 @@ blockquote::after {
   border-radius: 100%;
   text-align: center;
   position: absolute;
+}
+
+/* ------------------------LOGOS SCROLL-------------------------  */
+
+.main-clipper {
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  z-index: -1;
+}
+
+.main-clipper::after {
+  position: absolute;
+
+  content: '';
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 65%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  top: calc(50% - (100% + 8px) / 2);
+  left: calc(50% - (100% + 8px) / 2);
+
+  --standard-box-shadow: rgba(8, 6, 65, 0.15) 0px 5px 15px 0px;
+  box-shadow: var(--standard-box-shadow);
+}
+
+.scroll-parent-one {
+  width: 1638px;
+  height: 128px;
+
+  z-index: -2;
+
+  position: relative;
+  overflow: hidden;
+
+  margin: var(2rem) 0;
+}
+
+.scroll-element-one {
+  width: 1638px;
+  height: 128px;
+  background: url(assets/testimonial_strip1.png);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+
+  opacity: 0.75;
+}
+
+.primary-for-one {
+  animation: primary 23s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.secondary-for-one {
+  animation: secondary 23s linear infinite;
+}
+
+@keyframes secondary {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+.scroll-parent-two {
+  height: 128px;
+  width: 1638px;
+
+  z-index: -2;
+
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  margin: 0;
+
+}
+
+.scroll-element-two {
+  height: 128px;
+  width: 1638px;
+  background: url(assets/testimonial_strip2.png);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+
+  opacity: 0.75;
+
+
+
+
+
+}
+
+
+.primary-for-two {
+  animation: primary 18s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: -100%;
+  }
+}
+
+.secondary-for-two {
+  animation: secondary 18s linear infinite;
+}
+
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0%;
+  }
 }
