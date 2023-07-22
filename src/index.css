@@ -52,7 +52,7 @@ h6 {
   }
 
   .secondary-btn {
-    @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse text-main border-main bg-white hover:bg-slate-50 transition-all;
+    @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse text-main border-main bg-white  transition-all;
   }
 
   .trynow-btn {

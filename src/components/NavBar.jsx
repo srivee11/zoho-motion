@@ -41,7 +41,7 @@ export default function NavBar () {
   ]
 
   return (
-    <div className=' fixed top-0 mx-auto z-50 flex justify-between items-center w-[100%] bg-white backdrop-blur-md border-b-2 border-gray-200 px-1 sm:px-10 md:px-20 lg:px-48'>
+    <div className=' fixed top-0 mx-auto z-50 flex justify-around items-center w-[100%] bg-white backdrop-blur-md border-b-2 border-gray-200 px-1 sm:px-10 md:px-20 lg:px-40'>
       <motion.span variants={svg_anime} initial='initial' animate='animate'>
         <svg
           width='250'
@@ -140,14 +140,7 @@ export default function NavBar () {
       </div>
 
       <ul className='hidden  lg:flex lg:items-center lg:gap-2 text-gray-700'>
-        {/* <li>
-         
-          <FiSearch size={24} />
-        </li>
-        <li>
         
-          <FiGlobe size={24} />
-        </li> */}
         <li>
          
           <a className=' secondary-btn '> sign in </a>

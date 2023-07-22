@@ -61,11 +61,11 @@ export default function FeaturedApps() {
       return (
         <div
           name="products"
-          className="  w-full h-fit flex flex-col justify-start items-center bg-gradient-to-b from-slate-800 via-gray-900 to-black"
+          className="  w-full h-fit flex flex-col justify-start items-center bg-gradient-to-b from-blue-50 via-blue-50  to-white"
         >
           <div className="max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32">
             <div>
-              <h3 className=" capitalize text-2xl font-Mont font-bold tracking-wide  text-white  p-2 sm:text-3xl ">
+              <h3 className=" capitalize text-2xl font-Mont font-bold tracking-wide text-gray-900  p-2 sm:text-3xl ">
               our featured apps
 
               </h3>
@@ -75,13 +75,13 @@ export default function FeaturedApps() {
               {techs.map(({ id, src, title, description }) => (
                 <div
                   key={id}
-                  className={"product-card relative group  min-h-[300px] w-full max-w-[300px] bg-white shadow-md  px-4 py-2 rounded-md flex flex-col items-center overflow-hidden"}
+                  className={"product-card relative group  min-h-[300px] w-full max-w-[300px] bg-white border-2 border-gray-200 px-4 py-2 rounded-xl flex flex-col items-center overflow-hidden"}
                 >
                   <img src={src} alt="" className="w-[96px] mx-auto" />
                   <p className=" capitalize text-2xl font-Mont font-bold mt-4 tracking-wide inline-block text-gray-900">{title}</p>
                   <p className=" text-base font-normal mt-4 text-gray-700 ">{description}</p>
                   <a className=" trynow-btn  "> Try Now <FaChevronRight className='translate-x-1 group-hover:translate-x-2 transition-transform duration-300 ease-in-out ' size={16}/>   </a>
-                  <span className=' absolute bottom-[0%] left-[0%] w-full h-2 translate-y-[100%] bg-main group-hover:translate-y-[0%] transition-transform duration-300 ease-in-out ' ></span>
+                  <span className=' absolute bottom-[0%] left-[0%] w-full h-2 translate-y-[100%] bg-main/90 group-hover:translate-y-[0%] transition-transform duration-300 ease-in-out ' ></span>
                 </div>
               ))}
             </div>
