@@ -65,7 +65,7 @@ export default function FeaturedApps() {
         >
           <div className="max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32">
             <div>
-              <h3 className=" capitalize text-2xl font-Mont font-bold tracking-wide text-gray-900  p-2 sm:text-3xl ">
+              <h3 className=" capitalize text-2xl font-Mont font-medium tracking-wide text-gray-900  p-2 sm:text-3xl ">
               our featured apps
 
               </h3>

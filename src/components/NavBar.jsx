@@ -15,7 +15,7 @@ export default function NavBar () {
       y:'0%',
       transition: {
         
-        duration: 1,
+        duration: 1.5,
         ease: 'easeInOut'
       }
     }
