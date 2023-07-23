@@ -14,7 +14,7 @@ export default function Testimonials () {
   }
 
   return (
-    <div className=' w-full mx-auto h-fit flex flex-col items-center justify-center'>
+    <div name='customers' className=' w-full mx-auto h-fit flex flex-col items-center justify-center'>
       <div className=' relative max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
         <h3 className=' capitalize text-2xl font-Mont font-bold tracking-wide text-gray-900  p-2 sm:text-3xl'>
           More than
