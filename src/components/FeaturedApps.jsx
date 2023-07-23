@@ -104,10 +104,10 @@ export default function FeaturedApps () {
 
   return (
     <div
-      className='  w-full h-fit flex flex-col justify-start items-center bg-gradient-to-b from-blue-50 via-blue-50  to-white'
+      className=' w-full h-fit flex flex-col justify-start items-center bg-gradient-to-b from-blue-50 via-blue-50  to-white'
       name='products'
     >
-      <div className='  max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
+      <div className='relative  max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
         <div>
           <h3 className=' capitalize text-2xl font-Mont font-medium tracking-wide text-gray-900  p-2 sm:text-3xl '>
             our featured apps
@@ -117,7 +117,7 @@ export default function FeaturedApps () {
         <motion.div
           initial='offscreen'
           whileInView='onscreen'
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.3 }}
           className=' overflow-hidden  w-full flex flex-wrap gap-6 text-center p-8 justify-center items-center'
         >
           {techs.map(({ id, src, title, description }) => (
@@ -154,7 +154,14 @@ export default function FeaturedApps () {
             <FaChevronRight className=' ml-1' size={16} />
           </span>
         </button>
+            
+      <hr className=' absolute bottom-0 mt-1 w-[50%] h-[1px] border border-gray-200 rounded-full  '></hr>
+          
+
       </div>
+
+
+
     </div>
   )
 }
