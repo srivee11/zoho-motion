@@ -24,25 +24,30 @@ export default function () {
   return (
     <div
       name='zoho_one_id'
-      className=' mx-auto relative  w-full max-w-screen-lg h-fit flex flex-col gap-4 p-4 items-center justify-center bg-white text-gray-900 md:flex-row'
+      className= ' overflow-clip mx-auto w-full max-w-screen-lg h-fit flex flex-col-reverse gap-8  items-center justify-center bg-white text-gray-900 px-12 py-16 md:flex-row lg:py-24'
     >
-      <div className=' absolute top-0 mx-auto my-auto w-[30vmin] h-[30vmin] bg-purple-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
-      <div className=' absolute top-64 -left-32 mx-auto my-auto w-[50vmin] h-[50vmin] bg-cyan-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
+      <div className=' basis-11/12 md:basis-1/2 relative bg-white border-2 border-gray-200  backdrop-blur-md  flex flex-col gap-4 justify-center items-center px-8 py-8 rounded-2xl shadow-lg '>
+        <div className=' z-[-1] absolute top-[-50vmin] right-[-20vmin] aspect-square w-full max-w-[70vmin] bg-yellow-300 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
 
-      <div className=' w-[50%] relative bg-white/80 border-2 border-gray-200  backdrop-blur-md  flex flex-col gap-4 justify-center items-center px-8 py-10 rounded-2xl overflow-clip shadow-lg md:my-16'>
+        <div className=' z-[-1] absolute top-[-50vmin] right-[-10vmin] aspect-square w-full max-w-[50vmin] bg-orange-400 rounded-full mix-blend-multiply opacity-60 filter blur-xl'></div>
+
+        <div className=' z-[-1] absolute bottom-[-50vmin] left-[-30vmin] aspect-square w-full max-w-[70vmin] bg-cyan-200 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
+
+        <div className=' z-[-1] absolute bottom-[-50vmin] left-[-20vmin] aspect-square w-full max-w-[50vmin] bg-blue-500 rounded-full mix-blend-multiply opacity-50 filter blur-xl'></div>
+
         <blockquote className=' relative w-full h-fit py-8 px-8 flex items-center justify-center font-bold tracking-wide text-left text-lg  lg:text-xl lg:text-center'>
           With our complete business under control, our productivity is up by
           80% in the last year that we have been using Zoho.
         </blockquote>
 
         <div className=' flex flex-row gap-3 md:self-center'>
-          <div className=' w-[30%] max-h-[160px] rounded-xl border-2 border-gray-100 overflow-clip '>
-            <img src={old_ceo} className=' w-full' alt='old_ceo_2' />
+          <div className='w-[30%] max-w-[128px] rounded-xl border-2 border-gray-100 overflow-clip'>
+            <img src={old_ceo} className=' w-full aspect-square ' alt='old_ceo_2' />
           </div>
-          <div className='  w-[70%] flex flex-col justify-center gap-2 '>
-            <p className=' text-2xl font-bold'> Thomas John</p>
+          <div className='  w-[70%] flex flex-col justify-start '>
+            <p className=' text-xl font-medium'> Thomas John</p>
             <p className=' text-base'> Managing Director,</p>
-            <p className=' text-base'> Agappe Diagnostics</p>
+            <p className=' text-base'> Agappe Diagnosis</p>
           </div>
         </div>
 
@@ -54,8 +59,8 @@ export default function () {
         </button>
       </div>
 
-      <div className=' relative w-[50%]'>
-        <h3 className='w-full  text-center capitalize text-2xl font-Mont font-bold tracking-wide  text-gray-900  p-2 sm:text-3xl '>
+      <div className=' relative basis-11/12 md:basis-1/2'>
+        <h3 className='w-full  text-center capitalize text-2xl font-Mont font-medium tracking-wide text-gray-900 '>
           zoho for enterprises
         </h3>
         <p className=' w-full text-lg '>

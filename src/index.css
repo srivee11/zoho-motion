@@ -36,7 +36,7 @@ h6 {
 *::before,
 *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  border: 1pt solid rgba(255, 0, 0, 0.5) !important;
+  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important; */
 }
 
 @layer base {
@@ -143,7 +143,7 @@ blockquote::after {
   left: 0%;
   height: 100%;
 
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 .primary-for-one {
@@ -198,7 +198,7 @@ blockquote::after {
   left: 0%;
   height: 100%;
 
-  opacity: 0.75;
+  opacity: 0.5;
 
 
 

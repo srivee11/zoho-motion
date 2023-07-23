@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { motion, scroll } from 'framer-motion'
+import { animate, motion, scroll } from 'framer-motion'
 
 import { FaChevronRight } from 'react-icons/fa'
 
@@ -21,16 +21,33 @@ export default function () {
     }
   }
 
+  const quote_hover_anime = {
+    initial: {},
+    animate: {
+      scale: 1.05,color:'white',backgroundColor: "black",
+      transition: {
+        duration: 0.5,
+        ease: 'easeInOut'
+      }
+    }
+  }
+
   return (
     <div
       name='zoho_one_id'
-      className=' w-full h-fit flex flex-col items-center justify-center bg-white text-black'
+      className=' relative overflow-hidden w-full h-fit flex flex-col items-center justify-center bg-white text-black'
     >
-      <div className=' relative w-full max-w-lg  h-fit '>
-        <div className=' absolute top-0 mx-auto w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
-        <div className=' absolute top-64 -left-32 mx-auto w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
-      </div>
-      <div className=' relative bg-white/80 border-2 border-gray-200  backdrop-blur-md my-6 w-[90%] md:max-w-xl lg:max-w-2xl flex flex-col gap-3 justify-center items-center px-8 py-8 rounded-2xl overflow-clip shadow-lg md:my-16 lg:items-start lg:my-24 lg:px-24'>
+      
+      <div className=' relative bg-gradient-to-bl from-white to-white/80 via-white border-2 border-gray-200  backdrop-blur-md my-6 w-[90%] md:max-w-xl lg:max-w-2xl flex flex-col gap-3 justify-center items-center px-8 py-8 rounded-2xl shadow-lg md:my-16 lg:items-start lg:my-24 lg:px-24'>
+
+      <div className=' z-[-1] absolute top-[-50vmin] right-[-20vmin] aspect-square w-full max-w-[70vmin] bg-yellow-300 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
+
+      <div className=' z-[-1] absolute top-[-50vmin] right-[-10vmin] aspect-square w-full max-w-[50vmin] bg-orange-400 rounded-full mix-blend-multiply opacity-60 filter blur-xl'></div>
+
+      <div className=' z-[-1] absolute bottom-[-50vmin] left-[-30vmin] aspect-square w-full max-w-[70vmin] bg-cyan-200 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
+
+      <div className=' z-[-1] absolute bottom-[-50vmin] left-[-20vmin] aspect-square w-full max-w-[50vmin] bg-blue-500 rounded-full mix-blend-multiply opacity-50 filter blur-xl'></div>
+       
         <div className=' mx-auto w-[30%] sm:w-[20%] lg:w-[25%]'>
           <img
             src={zoho_one_icon}
@@ -43,23 +60,22 @@ export default function () {
         </h3>
         <p className=' w-full text-lg '>
           The all-in-one business suite to run your entire business with our unified cloud software,
-          designed to help you break down silos between all departments and increase
-          organizational efficiency.
+          designed to help you increase organizational efficiency.
         </p>
 
         <blockquote className=' relative w-full h-fit py-8 px-8 mx-auto font-bold tracking-wide text-left text-lg  lg:text-xl lg:text-center'>
-          You can be a startup, mid-sized company, or an enterprise—Zoho One is
+          You can be a startup, a SMB or an enterprise—Zoho One is
           a boon for all.
         </blockquote>
 
         <div className=' flex flex-row gap-3 md:self-center'>
-          <div className=' w-[30%] max-w-[128px] rounded-xl border-2 border-gray-100 overflow-clip '>
+          <div  className=' w-[30%] max-w-[128px] rounded-xl border-2 border-gray-100 overflow-clip '>
             <img src={young_ceo} className=' w-full h-full ' alt='my_zoho_1' />
           </div>
           <div className='  w-[70%] flex flex-col justify-start '>
-            <p className=' text-2xl font-bold'> Prakarsh Gagdani</p>
+            <p className=' text-xl font-medium'> Prakarsh Gagdani</p>
             <p className=' text-base'> CEO, 5paisa.com</p>
-            <p className=' text-base'> (an IIFL subsidiary)</p>
+            <p className=' text-base'> IIFL subsidiary</p>
           </div>
         </div>
 
@@ -70,7 +86,6 @@ export default function () {
           </span>
         </button>
 
-        <hr className=' absolute bottom-0 mt-1 w-[50%] h-[1px] border border-gray-200 rounded-full  '></hr>
 
 
       </div>

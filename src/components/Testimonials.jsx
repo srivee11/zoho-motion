@@ -16,14 +16,14 @@ export default function Testimonials () {
   return (
     <div name='customers' className=' w-full mx-auto h-fit flex flex-col items-center justify-center'>
       <div className=' relative max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
-        <h3 className=' capitalize text-2xl font-Mont font-bold tracking-wide text-gray-900  p-2 sm:text-3xl'>
+        <h3 className=' capitalize text-2xl font-Mont font-medium tracking-wide text-gray-900  p-2 sm:text-3xl'>
           More than
-          <span className='  text-main/90'> 80 Million+ </span>
+          <span className=' font-Mont font-semibold text-main/90'> 80 Million+ </span>
           people
         </h3>
 
-        <h3 className='capitalize text-2xl font-Mont font-bold tracking-wide text-gray-900  p-2 sm:text-3xl'>
-          across <span className='  text-main/90'> 150+ </span>
+        <h3 className='capitalize text-2xl font-Mont font-medium tracking-wide text-gray-900  p-2 sm:text-3xl'>
+          across <span className=' font-Mont font-semibold text-main/90'> 150+ </span>
           countries choose zoho
         </h3>
 

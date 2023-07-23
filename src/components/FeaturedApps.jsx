@@ -155,7 +155,7 @@ export default function FeaturedApps () {
           </span>
         </button>
             
-      <hr className=' absolute bottom-0 mt-1 w-[50%] h-[1px] border border-gray-200 rounded-full  '></hr>
+      {/* <hr className=' absolute bottom-0 mt-1 w-[50%] h-[1px] border border-gray-200 rounded-full  '></hr> */}
           
 
       </div>
