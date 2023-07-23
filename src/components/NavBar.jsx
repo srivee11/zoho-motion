@@ -9,13 +9,14 @@ import Zoho_Logo from '../assets/main icons/zoho logo pt@4x.png'
 import { motion, scroll } from 'framer-motion'
 
 export default function NavBar () {
-  const svg_anime = {
-    initial: { scale: 0.2 },
+  const navbar_slide_anime = {
+    initial: { y: '-100%' },
     animate: {
-      scale: 0.6,
+      y:'0%',
       transition: {
-        type: 'spring',
-        duration: 1
+        
+        duration: 1,
+        ease: 'easeInOut'
       }
     }
   }
@@ -41,7 +42,7 @@ export default function NavBar () {
   ]
 
   return (
-    <div className=' mt-3 fixed top-0 left-0 right-0 mx-auto z-50 flex justify-between items-center w-[70%] bg-white backdrop-blur-md border-2 rounded-xl shadow-lg border-gray-200 px-2 py-1 md:px-2 '>
+    <motion.div variants={navbar_slide_anime} initial='initial' animate='animate' className=' mt-3 fixed top-0 left-0 right-0 mx-auto z-50 flex justify-between items-center w-[70%] bg-white backdrop-blur-md border-2 rounded-xl shadow-lg border-gray-200 px-2 py-1 md:px-2 md:w-[60%] '>
      
        <img src={Zoho_Logo} className=' max-h-14 ' />
 
@@ -71,7 +72,7 @@ export default function NavBar () {
         onClick={() => setNav(!nav)}
         className='pr-4 cursor-pointer z-10 lg:hidden text-gray-700'
       >
-        {nav ? <FaTimes size={28} /> : <FaBars size={28} />}
+        {nav ? <FaTimes size={24} /> : <FaBars size={24} />}
       </div>
 
       {nav && (
@@ -94,6 +95,6 @@ export default function NavBar () {
           ))}
         </div>
       )}
-    </div>
+    </motion.div>
   )
 }

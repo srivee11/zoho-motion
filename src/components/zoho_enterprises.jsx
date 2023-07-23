@@ -26,8 +26,8 @@ export default function () {
       name='zoho_one_id'
       className=' mx-auto relative  w-full max-w-screen-lg h-fit flex flex-col gap-4 p-4 items-center justify-center bg-white text-gray-900 md:flex-row'
     >
-      <div className=' absolute top-0 mx-auto w-[30vmin] h-[30vmin] bg-purple-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
-      <div className=' absolute top-64 -left-32 mx-auto w-[50vmin] h-[50vmin] bg-cyan-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
+      <div className=' absolute top-0 mx-auto my-auto w-[30vmin] h-[30vmin] bg-purple-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
+      <div className=' absolute top-64 -left-32 mx-auto my-auto w-[50vmin] h-[50vmin] bg-cyan-500 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
 
       <div className=' w-[50%] relative bg-white/80 border-2 border-gray-200  backdrop-blur-md  flex flex-col gap-4 justify-center items-center px-8 py-10 rounded-2xl overflow-clip shadow-lg md:my-16'>
         <blockquote className=' relative w-full h-fit py-8 px-8 flex items-center justify-center font-bold tracking-wide text-left text-lg  lg:text-xl lg:text-center'>
