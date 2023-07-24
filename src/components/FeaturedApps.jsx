@@ -108,10 +108,10 @@ export default function FeaturedApps () {
       name='products'
     >
       <div className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-full max-w-[60vmin] bg-violet-600 rounded-full mix-blend-soft-light opacity-80 filter blur-xl'></div>
-      <div className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[80vmin] bg-indigo-500 rounded-full mix-blend-soft-light opacity-80 filter blur-xl'></div>
+      <div className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[80vmin] bg-indigo-500 rounded-full mix-blend-soft-light opacity-70 filter blur-xl'></div>
       <div className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[90vmin] bg-blue-500 rounded-full mix-blend-soft-light opacity-60 filter blur-xl'></div>
       <div className=' mx-auto absolute top-[-60%] left-0 right-0  aspect-square w-full max-w-[100vmin] bg-cyan-300 rounded-full mix-blend-soft-light opacity-60 filter blur-xl'></div>
-      <div className=' mx-auto absolute top-0 left-0 right-0 aspect-square w-full bg-gradient-to-b from-cyan-300/50 to bg-white via-white mix-blend-soft-light opacity-50 filter blur-sm'></div>
+      <div className=' mx-auto absolute top-0 left-0 right-0 aspect-square w-full bg-gradient-to-b from-cyan-100 to bg-white via-white mix-blend-soft-light opacity-65 filter blur-sm'></div>
 
       <div className='relative  max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
         <div>
@@ -131,7 +131,7 @@ export default function FeaturedApps () {
               variants={cardVariants}
               key={id}
               className={
-                'product-card relative group  min-h-[300px] w-full max-w-[300px] bg-white border-2 border-gray-200 px-4 py-2 rounded-xl flex flex-col items-center overflow-hidden'
+                'cursor-pointer product-card relative group  min-h-[300px] w-full max-w-[300px] bg-white border-2 border-gray-200 px-4 py-2 rounded-xl flex flex-col items-center overflow-hidden'
               }
             >
               <motion.span variants={card_icons}>
@@ -142,7 +142,7 @@ export default function FeaturedApps () {
                   className='w-[96px] mx-auto'
                 />
               </motion.span>
-              <p className=' capitalize text-2xl font-Mont font-bold mt-4 tracking-wide inline-block text-gray-900'>
+              <p className=' capitalize text-2xl font-Mont font-semibold mt-4 tracking-wide inline-block text-gray-700'>
                 {title}
               </p>
               <hr className=' mt-1 w-[20%] h-[1px] border border-gray-200 rounded-full  ' />

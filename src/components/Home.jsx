@@ -79,7 +79,7 @@ export default function Home () {
   return (
     <div
       name='home'
-      className=' w-full h-fit flex flex-col items-center bg-white text-black'
+      className=' w-full h-fit flex flex-col items-center bg-white'
     >
       <motion.div
         variants={fadein_anime}
@@ -97,10 +97,10 @@ export default function Home () {
         </motion.div>
 
         <div className=' flex flex-col  gap-2 justify-center h-full md:w-[60%] '>
-          <h2 className=' overflow-clip  text-gray-900 font-Mont capitalize mt-6 text-2xl tracking-[-1px] font-bold md:text-4xl lg:text-4xl'>
+          <h2 className=' overflow-clip  text-gray-800 font-Mont capitalize mt-6 text-2xl tracking-[-1px] font-bold md:text-4xl lg:text-4xl'>
             Your life's work, powered by our life's work
           </h2>
-          <p className=' overflow-clip  text-gray-700  w-full py-4 text-xl md:text-2xl lg:text-2xl lg: max-w-[600px]'>
+          <p className=' overflow-clip  text-gray-600  w-full py-4 text-xl md:text-2xl lg:text-2xl lg: max-w-[600px]'>
             Powerful software suite to transform the way you work. Designed for
             businesses of all sizes, built by a company that
             <span className=' font-medium'> values your privacy.</span>
