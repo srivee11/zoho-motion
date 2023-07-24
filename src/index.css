@@ -76,7 +76,7 @@ blockquote::after {
 blockquote::before,
 blockquote::after {
   color: white;
-  background-color: black;
+  background-color: #374151;
   display: block;
   width: 30px;
   height: 30px;
