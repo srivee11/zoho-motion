@@ -44,7 +44,7 @@ export default function NavBar () {
   return (
     <motion.div variants={navbar_slide_anime} initial='initial' animate='animate' className=' mt-3 fixed top-0 left-0 right-0 mx-auto z-50 flex justify-between items-center  bg-white backdrop-blur-md border-2 rounded-xl shadow-lg border-gray-200 px-2 py-1 w-[90%] md:px-2 lg:w-[70%] '>
      
-       <img src={Zoho_Logo} className=' max-h-14 ' />
+       <img src={Zoho_Logo} className=' max-h-12 sm:max-h-14 ' />
 
       <div className=' hidden  lg:flex lg:gap-2'>
         {links.map(({ id, link, offset }) => (
