@@ -11,15 +11,15 @@ import young_ceo from '../assets/young_ceo.jpg'
 
 
 export default function () {
-  const float_anime = {
+  const pulse_anime = {
     animate: {
-      scale: [1, 1.05],
+      scale: [1, 1.05], opacity: [0.7, 0.9],
       transition: {
         repeat: Infinity,
         repeatType: 'reverse',
         duration: 2,
         ease: 'easeInOut',
-        delay: 0.05 * (Math.floor(Math.random() * 3) + 1)
+        delay: 0.05
 
       }
     }
@@ -43,10 +43,10 @@ export default function () {
       name='zoho_one_id'
       className=' relative w-full h-fit flex flex-col items-center justify-center  py-12 px-4  lg:py-32 '
     >
-      <motion.div variants={float_anime} animate='animate' className=' mx-auto my-auto absolute  left-0 right-0 aspect-square w-[70vmin] bg-rose-500 rounded-full mix-blend-soft-light opacity-90 filter blur-md'></motion.div>
-      <motion.div variants={float_anime} animate='animate'  className=' mx-auto my-auto absolute  left-0 right-0 aspect-square w-[80vmin] bg-orange-500 rounded-full mix-blend-soft-light opacity-80 filter blur-md'></motion.div>
-      <motion.div variants={float_anime} animate='animate' className=' mx-auto my-auto absolute  left-0 right-0 aspect-square w-[90vmin] bg-amber-500 rounded-full mix-blend-soft-light opacity-70 filter blur-md'></motion.div>
-      <motion.div variants={float_anime} animate='animate' className=' mx-auto my-auto absolute  left-0 right-0  aspect-square w-[100vmin] bg-yellow-300 rounded-full mix-blend-soft-light opacity-60 filter blur-md'></motion.div>
+      <motion.div variants={pulse_anime} animate='animate' className=' mx-auto my-auto absolute  left-0 right-0 aspect-square w-[70vmin] bg-rose-500 rounded-full mix-blend-soft-light opacity-90 filter blur-md'></motion.div>
+      <motion.div variants={pulse_anime} animate='animate'  className=' mx-auto my-auto absolute  left-0 right-0 aspect-square w-[80vmin] bg-orange-500 rounded-full mix-blend-soft-light opacity-80 filter blur-md'></motion.div>
+      <motion.div variants={pulse_anime} animate='animate' className=' mx-auto my-auto absolute  left-0 right-0 aspect-square w-[90vmin] bg-amber-500 rounded-full mix-blend-soft-light opacity-70 filter blur-md'></motion.div>
+      <motion.div variants={pulse_anime} animate='animate' className=' mx-auto my-auto absolute  left-0 right-0  aspect-square w-[100vmin] bg-yellow-300 rounded-full mix-blend-soft-light opacity-60 filter blur-md'></motion.div>
       <div className=' mx-auto my-auto absolute  left-0 right-0 h-full w-full bg-gradient-to-t from-yellow-300/75 to bg-white/0 via-yellow-100/50 mix-blend-soft-light opacity-80 filter blur-sm'></div>
 
       <div className=' relative bg-white border-2 border-gray-200  backdrop-blur-md rounded-2xl shadow-lg sm:max-w-lg md:max-w-xl flex flex-col gap-3 justify-center items-center px-4 py-6  md:items-start md:px-12 md:py-16'>

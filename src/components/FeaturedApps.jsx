@@ -12,6 +12,20 @@ import people from '../assets/main icons/people.svg'
 import { FaChevronRight } from 'react-icons/fa'
 
 export default function FeaturedApps () {
+  const pulse_anime = {
+    animate: {
+      scale: [1, 1.05],
+      opacity: [0.7, 0.9],
+      transition: {
+        repeat: Infinity,
+        repeatType: 'reverse',
+        duration: 2,
+        ease: 'easeInOut',
+        delay: 0.05
+      }
+    }
+  }
+
   const cardVariants = {
     offscreen: {
       y: '200%'
@@ -107,11 +121,11 @@ export default function FeaturedApps () {
       className=' overflow-hidden relative w-full h-fit flex flex-col justify-start items-center'
       name='products'
     >
-      <div className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-full max-w-[60vmin] bg-violet-600 rounded-full mix-blend-soft-light opacity-100 filter blur-md'></div>
-      <div className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[80vmin] bg-indigo-500 rounded-full mix-blend-soft-light opacity-100 filter blur-md'></div>
-      <div className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[90vmin] bg-blue-500 rounded-full mix-blend-soft-light opacity-70 filter blur-md'></div>
-      <div className=' mx-auto absolute top-[-60%] left-0 right-0  aspect-square w-full max-w-[100vmin] bg-cyan-300 rounded-full mix-blend-soft-light opacity-60 filter blur-md'></div>
-      <div className=' mx-auto absolute top-0 left-0 right-0 h-full w-[100vw] bg-gradient-to-b from-cyan-100 to bg-white/0 mix-blend-soft-light opacity-65 filter blur-sm'></div>
+      <motion.div variants={pulse_anime} animate='animate' className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-full max-w-[60vmin] bg-violet-700 rounded-full mix-blend-soft-light opacity-80 filter blur-md'></motion.div>
+      <motion.div variants={pulse_anime} animate='animate' className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[80vmin] bg-indigo-600 rounded-full mix-blend-soft-light opacity-90 filter blur-md'></motion.div>
+      <motion.div variants={pulse_anime} animate='animate' className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[90vmin] bg-blue-500 rounded-full mix-blend-soft-light opacity-60 filter blur-md'></motion.div>
+      <motion.div variants={pulse_anime} animate='animate' className=' mx-auto absolute top-[-60%] left-0 right-0  aspect-square w-full max-w-[100vmin] bg-cyan-300 rounded-full mix-blend-soft-light opacity-50 filter blur-md'></motion.div>
+      <div  className=' mx-auto absolute top-0 left-0 right-0 h-full w-[100vw] bg-gradient-to-b from-cyan-100 to bg-white/0 mix-blend-soft-light opacity-65 filter blur-sm'></div>
 
       <div className='relative  max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
         <div>
@@ -135,7 +149,6 @@ export default function FeaturedApps () {
               }
             >
               <motion.span variants={card_icons}>
-                
                 <img
                   src={src}
                   alt='product_icons'
