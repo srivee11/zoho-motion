@@ -107,8 +107,8 @@ export default function FeaturedApps () {
       className=' overflow-hidden relative w-full h-fit flex flex-col justify-start items-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]'
       name='products'
     >
-      <div className=' mx-auto absolute top-[-45%] left-0 right-0 aspect-square w-full max-w-[60vmin] bg-violet-600 rounded-full mix-soft-light opacity-90 filter blur-lg'></div>
-      <div className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-full max-w-[80vmin] bg-indigo-500 rounded-full mix-soft-light opacity-80 filter blur-xl'></div>
+      <div className=' mx-auto absolute top-[-45%] left-0 right-0 aspect-square w-full max-w-[60vmin] bg-violet-600 rounded-full mix-blend-soft-light opacity-80 filter blur-lg'></div>
+      <div className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-full max-w-[80vmin] bg-indigo-500 rounded-full mix-blend-soft-light opacity-80 filter blur-xl'></div>
       <div className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-full max-w-[90vmin] bg-blue-500 rounded-full mix-blend-soft-light opacity-60 filter blur-xl'></div>
       <div className=' mx-auto absolute top-[-50%] left-0 right-0  aspect-square w-full max-w-[100vmin] bg-cyan-300 rounded-full mix-blend-soft-light opacity-60 filter blur-xl'></div>
       <div className=' mx-auto absolute top-0 left-0 right-0 aspect-square w-full bg-gradient-to-b from-cyan-300/50 to bg-white via-white mix-blend-soft-light opacity-50 filter blur-sm'></div>
