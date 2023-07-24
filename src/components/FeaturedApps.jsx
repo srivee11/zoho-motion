@@ -107,10 +107,10 @@ export default function FeaturedApps () {
       className=' overflow-hidden relative w-full h-fit flex flex-col justify-start items-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]'
       name='products'
     >
-      <div className=' mx-auto absolute top-[-40%] left-0 right-0 h-full max-h-[50vmin] w-full max-w-[50vmin] bg-violet-600 rounded-full mix-soft-light opacity-90 filter blur-xl'></div>
-      <div className=' mx-auto absolute top-[-50%] left-0 right-0 h-full max-h-[60vmin] w-full max-w-[100vmin] bg-indigo-500 rounded-full mix-soft-light opacity-80 filter blur-xl'></div>
-      <div className=' mx-auto absolute top-[-55%] left-0 right-0 h-full max-h-[80vmin] w-full max-w-[130vmin] bg-blue-500 rounded-full mix-blend-soft-light opacity-60 filter blur-xl'></div>
-      <div className=' mx-auto absolute top-[-60%] left-0 right-0 h-full max-h-[100vmin] w-full max-w-[150vmin] bg-cyan-300 rounded-full mix-blend-soft-light opacity-60 filter blur-xl'></div>
+      <div className=' mx-auto absolute top-[-45%] left-0 right-0 aspect-square w-full max-w-[60vmin] bg-violet-600 rounded-full mix-soft-light opacity-90 filter blur-lg'></div>
+      <div className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-full max-w-[80vmin] bg-indigo-500 rounded-full mix-soft-light opacity-80 filter blur-xl'></div>
+      <div className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-full max-w-[90vmin] bg-blue-500 rounded-full mix-blend-soft-light opacity-60 filter blur-xl'></div>
+      <div className=' mx-auto absolute top-[-50%] left-0 right-0  aspect-square w-full max-w-[100vmin] bg-cyan-300 rounded-full mix-blend-soft-light opacity-60 filter blur-xl'></div>
       <div className=' mx-auto absolute top-0 left-0 right-0 aspect-square w-full bg-gradient-to-b from-cyan-300/50 to bg-white via-white mix-blend-soft-light opacity-50 filter blur-sm'></div>
 
       <div className='relative  max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
@@ -135,7 +135,7 @@ export default function FeaturedApps () {
               }
             >
               <motion.span variants={card_icons}>
-                {' '}
+                
                 <img
                   src={src}
                   alt='product_icons'
