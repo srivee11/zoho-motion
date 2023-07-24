@@ -21,42 +21,45 @@ export default function FeaturedApps () {
         repeatType: 'reverse',
         duration: 2,
         ease: 'easeInOut',
-        delay: 0.05
+        delay: 0.05,
       }
     }
   }
 
   const cardVariants = {
-    offscreen: {
-      y: '200%'
+    initial: {
+      y: '100%'
     },
-    onscreen: {
+    animate: ({id}) => ( {
       y: '0%',
 
       transition: {
         type: 'spring',
-        delay: 0.3,
         bounce: 0.2,
-        duration: 0.8,
-        when: 'beforeChildren',
-        staggerChildren: 0.5
+        duration: 1,
+        delay: 2 * id,
+
+
       }
-    }
+    })
   }
 
   const card_icons = {
-    offscreen: {
+    initial: {
       scale: 0,
-      rotate: -20
+      rotate: -15
     },
-    onscreen: {
+    animate: {
       scale: 1,
       rotate: 0,
       transition: {
         type: 'spring',
         bounce: 0.3,
-        duration: 1,
-        ease: 'easeIn'
+        duration: 1.5,
+        delay: 0.5,
+        ease: 'easeInOut',
+        when: 'beforeChildren'
+
       }
     }
   }
@@ -121,11 +124,27 @@ export default function FeaturedApps () {
       className=' overflow-hidden relative w-full h-fit flex flex-col justify-start items-center'
       name='products'
     >
-      <motion.div variants={pulse_anime} animate='animate' className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-full max-w-[60vmin] bg-violet-700 rounded-full mix-blend-soft-light opacity-80 filter blur-md'></motion.div>
-      <motion.div variants={pulse_anime} animate='animate' className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[80vmin] bg-indigo-600 rounded-full mix-blend-soft-light opacity-90 filter blur-md'></motion.div>
-      <motion.div variants={pulse_anime} animate='animate' className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[90vmin] bg-blue-500 rounded-full mix-blend-soft-light opacity-60 filter blur-md'></motion.div>
-      <motion.div variants={pulse_anime} animate='animate' className=' mx-auto absolute top-[-60%] left-0 right-0  aspect-square w-full max-w-[100vmin] bg-cyan-300 rounded-full mix-blend-soft-light opacity-50 filter blur-md'></motion.div>
-      <div  className=' mx-auto absolute top-0 left-0 right-0 h-full w-[100vw] bg-gradient-to-b from-cyan-100 to bg-white/0 mix-blend-soft-light opacity-65 filter blur-sm'></div>
+      <motion.div
+        variants={pulse_anime}
+        animate='animate'
+        className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-full max-w-[60vmin] bg-violet-700 rounded-full mix-blend-soft-light opacity-80 filter blur-md'
+      ></motion.div>
+      <motion.div
+        variants={pulse_anime}
+        animate='animate'
+        className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[80vmin] bg-indigo-600 rounded-full mix-blend-soft-light opacity-90 filter blur-md'
+      ></motion.div>
+      <motion.div
+        variants={pulse_anime}
+        animate='animate'
+        className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[90vmin] bg-blue-500 rounded-full mix-blend-soft-light opacity-60 filter blur-md'
+      ></motion.div>
+      <motion.div
+        variants={pulse_anime}
+        animate='animate'
+        className=' mx-auto absolute top-[-60%] left-0 right-0  aspect-square w-full max-w-[100vmin] bg-cyan-300 rounded-full mix-blend-soft-light opacity-50 filter blur-md'
+      ></motion.div>
+      <div className=' mx-auto absolute top-0 left-0 right-0 h-full w-[100vw] bg-gradient-to-b from-cyan-100 to bg-white/0 mix-blend-soft-light opacity-65 filter blur-sm'></div>
 
       <div className='relative  max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
         <div>
@@ -134,21 +153,23 @@ export default function FeaturedApps () {
           </h3>
         </div>
 
-        <motion.div
+        <div
           initial='offscreen'
-          whileInView='onscreen'
-          viewport={{ once: true, amount: 0.3 }}
           className=' overflow-hidden  w-full flex flex-wrap gap-6 text-center p-8 justify-center items-center'
         >
           {techs.map(({ id, src, title, description }) => (
             <motion.div
               variants={cardVariants}
+              initial='initial'
+              whileInView='animate'
+              viewport={{ once: true }}
+              custom={id}
               key={id}
               className={
                 'cursor-pointer product-card relative group  min-h-[300px] w-full max-w-[300px] bg-white border-2 border-gray-200 px-4 py-2 rounded-xl flex flex-col items-center overflow-hidden'
               }
             >
-              <motion.span variants={card_icons}>
+              <motion.span variants={card_icons} initial='initial' whileInView='animate' >
                 <img
                   src={src}
                   alt='product_icons'
@@ -172,7 +193,7 @@ export default function FeaturedApps () {
               <span className=' absolute bottom-[0%] left-[0%] w-full h-2 translate-y-[100%] bg-main/90 group-hover:translate-y-[0%] transition-transform duration-300 ease-in-out '></span>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
 
         <button className='group secondary-btn'>
           explore all products
