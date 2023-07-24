@@ -104,7 +104,7 @@ export default function FeaturedApps () {
 
   return (
     <div
-      className=' w-full h-fit flex flex-col justify-start items-center bg-gradient-to-b from-blue-50 via-blue-50  to-white'
+      className=' w-full h-fit flex flex-col justify-start items-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-light via-blue-50 to-white'
       name='products'
     >
       <div className='relative  max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>

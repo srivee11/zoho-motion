@@ -40,13 +40,18 @@ export default function () {
       
       <div className=' relative bg-gradient-to-bl from-white to-white/80 via-white border-2 border-gray-200  backdrop-blur-md my-6 w-[90%] md:max-w-xl lg:max-w-2xl flex flex-col gap-3 justify-center items-center px-8 py-8 rounded-2xl shadow-lg md:my-16 lg:items-start lg:my-24 lg:px-24'>
 
-      <div className=' z-[-1] absolute top-[-50vmin] right-[-20vmin] aspect-square w-full max-w-[70vmin] bg-yellow-300 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
+      <div className=' z-[-1] absolute top-[-50vmin] right-[-20vmin] aspect-square w-full max-w-[65vmin] bg-yellow-300 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
 
-      <div className=' z-[-1] absolute top-[-50vmin] right-[-10vmin] aspect-square w-full max-w-[50vmin] bg-orange-400 rounded-full mix-blend-multiply opacity-60 filter blur-xl'></div>
 
-      <div className=' z-[-1] absolute bottom-[-50vmin] left-[-30vmin] aspect-square w-full max-w-[70vmin] bg-cyan-200 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
+      <div className=' z-[-1] absolute top-[-50vmin] right-[-20vmin] aspect-square w-full max-w-[55vmin] bg-yellow-400 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
+
+      <div className=' z-[-1] absolute top-[-55vmin] right-[-15vmin] aspect-square w-full max-w-[50vmin] bg-orange-400 rounded-full mix-blend-multiply opacity-50 filter blur-xl'></div>
+
+      <div className=' z-[-1] absolute bottom-[-50vmin] left-[-25vmin] aspect-square w-full max-w-[60vmin] bg-cyan-200 rounded-full mix-blend-multiply opacity-70 filter blur-xl'></div>
 
       <div className=' z-[-1] absolute bottom-[-50vmin] left-[-20vmin] aspect-square w-full max-w-[50vmin] bg-blue-500 rounded-full mix-blend-multiply opacity-50 filter blur-xl'></div>
+      
+      <div className=' z-[-1] absolute bottom-[-52vmin] left-[-20vmin] aspect-square w-full max-w-[45vmin] bg-blue-600 rounded-full mix-blend-multiply opacity-50 filter blur-xl'></div>
        
         <div className=' mx-auto w-[30%] sm:w-[20%] lg:w-[25%]'>
           <img
