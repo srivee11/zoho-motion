@@ -23,7 +23,7 @@ export default function () {
   }
 
   return (
-    <div name='zoho_one_id'  className=' relative  mx-auto w-full max-w-screen-lg h-fit flex flex-col-reverse gap-8  items-center justify-center text-gray-700 px-12 py-16 lg:flex-row lg:gap-16 lg:py-24'
+    <div name='zoho_one_id'  className=' overflow-clip relative  mx-auto w-full max-w-screen-lg h-fit flex flex-col-reverse gap-8  items-center justify-center text-gray-700 px-12 py-16 lg:flex-row lg:gap-16 lg:py-24'
     >
       <motion.div
         variants={pulse_anime}

@@ -147,11 +147,11 @@ export default function FeaturedApps () {
       <div className=' mx-auto absolute top-0 left-0 right-0 h-full w-[100vw] bg-gradient-to-b from-cyan-100 to bg-white/0 mix-blend-soft-light opacity-65 filter blur-sm'></div>
 
       <div className='relative  max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
-        <div>
+        
           <h3 className=' capitalize text-center text-2xl font-Mont font-medium tracking-wide text-gray-900  p-2 sm:text-3xl '>
             our featured apps
           </h3>
-        </div>
+        
 
         <div
           initial='offscreen'

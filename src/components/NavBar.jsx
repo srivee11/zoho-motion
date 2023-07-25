@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FiMenu, FiX } from 'react-icons/fi'
 import { FiSearch } from 'react-icons/fi'
 import { FiGlobe } from 'react-icons/fi'
 import { Link } from 'react-scroll'
@@ -73,7 +73,7 @@ export default function NavBar () {
         onClick={() => setNav(!nav)}
         className='pr-4 cursor-pointer z-10 lg:hidden text-gray-700'
       >
-        {nav ? <FaTimes size={24} /> : <FaBars size={24} />}
+        {nav ? <FiX size={24} strokeWidth={2.5} /> : <FiMenu size={24} strokeWidth={2.5} />}
       </div>
 
       {nav && (
