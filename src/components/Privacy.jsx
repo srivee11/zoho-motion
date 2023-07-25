@@ -55,7 +55,7 @@ export default function Privacy () {
         <div className=' mx-auto   w-full h-full flex flex-col gap-4 justify-center items-center text-center  lg:flex-row lg:gap-8 lg:flex-wrap '>
           <div className=' privacy-card '>
             <span className='privacy-icon'>
-              <FiLock size={56} strokeWidth={1} />
+              <FiLock size={56} strokeWidth={1}  />
             </span>
             <p className='privacy-title'>Privacy</p>
             <hr className=' mt-1 w-[30%] h-[1px] border border-gray-200 rounded-full  '/>

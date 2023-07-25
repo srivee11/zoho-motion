@@ -28,19 +28,17 @@ export default function visions () {
     >
       <motion.div className=' max-w-screen-lg  flex flex-col  justify-center items-center px-8 pt-32 pb-8  md:flex-row-reverse md:pb-24 md:pt-40'>
         <motion.div
-          variants={bg_filter_anime}
-          initial='initial'
-          animate='animate'
-          className=' mx-auto rounded-2xl overflow-clip w-[60%] md:w-[40%] '
+       
+          className=' mx-auto rounded-2xl overflow-clip w-[60%] md:w-[40%] grayscale hover:grayscale-0 hover:rotate-2 scale-[0.8] transition-all duration-700'
         >
           <img src={zoho_ceo} alt='zoho_ceo_img'/>
         </motion.div>
 
-        <div className=' flex flex-col  gap-2 justify-center h-full md:w-[60%] '>
-          <h2 className=' overflow-clip  text-gray-800 font-Mont capitalize mt-6 text-2xl tracking-[-1px] font-bold md:text-4xl lg:text-4xl'>
+        <div className=' flex flex-col  gap-2 justify-center items-center w-full h-full md:w-[60%] '>
+          <h3 className=' capitalize text-center text-2xl font-Mont font-medium tracking-wide text-gray-900 w-full max-w-[500px]  p-2 sm:text-3xl'>
             Vision from a village
-          </h2>
-          <p className=' overflow-clip  text-gray-600  w-full py-4 text-xl md:text-2xl lg:text-2xl lg: max-w-[600px]'>
+          </h3>
+          <p className=' text-gray-700  w-full mb-6 text-base  max-w-[500px] md:text-lg'>
             "Why Zoho's CEO moved from California to a hamlet in Tamil Nadu: The
             lessons this holds for an economy that wants to be self-reliant; for
             corporations headquartered in big cities; and a country with a high
