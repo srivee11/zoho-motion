@@ -10,7 +10,7 @@ import { motion, scroll } from 'framer-motion'
 
 export default function NavBar () {
   const navbar_slide_anime = {
-    initial: { y: '-10vh' },
+    initial: { y: '-25vmin' },
     animate: {
       y:'0%',
       transition: {

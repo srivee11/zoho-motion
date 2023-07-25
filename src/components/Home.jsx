@@ -6,24 +6,6 @@ import { FaChevronRight } from 'react-icons/fa'
 
 import HeroImage from '../assets/main icons/3d blocks.png'
 
-function Section ({ children }) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
-
-  return (
-    <section ref={ref}>
-      <span
-        style={{
-          transform: isInView ? 'none' : 'translateX(-100%)',
-          opacity: isInView ? 1 : 0,
-          transition: 'all 5 cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'
-        }}
-      >
-        {children}
-      </span>
-    </section>
-  )
-}
 
 export default function Home () {
   const float_anime = {
@@ -36,7 +18,6 @@ export default function Home () {
         duration: 2,
         ease: 'easeInOut',
         when: "afterChildren",
-        staggerChildren: 0.5,
         delay: 1.5
       }
     }
@@ -69,8 +50,8 @@ export default function Home () {
 
       transition: {
         type: 'spring',
-        delay: 0.5,
-        duration: 1.5,
+        delay: 1,
+        duration: 3,
         ease: 'easeIn'
       }
     }
