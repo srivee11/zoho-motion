@@ -42,7 +42,7 @@ export default function Home () {
   const fadein_anime = {
     initial: {
       opacity: 0,
-      y: '1vmin'
+      y: '5vmin'
     },
     animate: {
       opacity: 1,
@@ -52,7 +52,7 @@ export default function Home () {
         type: 'spring',
         delay: 1,
         duration: 3,
-        ease: 'easeIn'
+        ease: 'easeInOut'
       }
     }
   }

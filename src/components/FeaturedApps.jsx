@@ -169,7 +169,7 @@ export default function FeaturedApps () {
                 'cursor-pointer product-card relative group  min-h-[300px] w-full max-w-[300px] shadow-lg bg-white border-2 border-gray-200 px-4 py-2 rounded-xl flex flex-col items-center overflow-hidden'
               }
             >
-              <motion.span variants={card_icons} initial='initial' whileInView='animate' >
+              <motion.span variants={card_icons} initial='initial' whileInView='animate' viewport={{ once: true }}   >
                 <img
                   src={src}
                   alt='product_icons'
