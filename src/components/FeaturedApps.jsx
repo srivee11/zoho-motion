@@ -166,7 +166,7 @@ export default function FeaturedApps () {
               custom={id}
               key={id}
               className={
-                'cursor-pointer product-card relative group  min-h-[300px] w-full max-w-[300px] bg-white border-2 border-gray-200 px-4 py-2 rounded-xl flex flex-col items-center overflow-hidden'
+                'cursor-pointer product-card relative group  min-h-[300px] w-full max-w-[300px] shadow-lg bg-white border-2 border-gray-200 px-4 py-2 rounded-xl flex flex-col items-center overflow-hidden'
               }
             >
               <motion.span variants={card_icons} initial='initial' whileInView='animate' >
@@ -195,7 +195,7 @@ export default function FeaturedApps () {
           ))}
         </div>
 
-        <button className='group secondary-btn'>
+        <button className='group primary-btn'>
           explore all products
           <span className='group-hover:translate-x-1 transition-transform duration-300 '>
             <FaChevronRight className=' ml-1' size={16} />

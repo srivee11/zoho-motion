@@ -49,7 +49,7 @@ export default function () {
       <motion.div variants={pulse_anime} animate='animate' className=' mx-auto my-auto absolute  left-0 right-0  aspect-square w-[100vmin] bg-yellow-300 rounded-full mix-blend-soft-light opacity-60 filter blur-md'></motion.div>
       <div className=' mx-auto my-auto absolute  left-0 right-0 h-full w-full bg-gradient-to-t from-yellow-300/50 to bg-white/0 via-yellow-100 mix-blend-soft-light opacity-80 filter blur-sm'></div>
 
-      <div className=' relative bg-white border-2 border-gray-200  backdrop-blur-md rounded-2xl shadow-lg sm:max-w-lg md:max-w-xl flex flex-col gap-3 justify-center items-center px-4 py-6  md:items-start md:px-12 md:py-16'>
+      <div className=' relative bg-white border-2 border-gray-200  backdrop-blur-md rounded-2xl shadow-xl sm:max-w-lg md:max-w-xl flex flex-col gap-3 justify-center items-center px-4 py-6  md:items-start md:px-12 md:py-16'>
         <div className=' mx-auto w-[30%] sm:w-[20%] lg:w-[25%]'>
           <img
             src={zoho_one_icon}
@@ -60,7 +60,7 @@ export default function () {
         <h3 className=' w-full capitalize text-center text-2xl font-Mont font-medium tracking-wide text-gray-900 sm:text-3xl  '>
           zoho one
         </h3>
-        <p className=' w-full mx-auto text-base p-2 text-gray-700 '>
+        <p className=' w-full mx-auto text-base p-2 text-gray-700 lg:text-xl '>
           The all-in-one business suite to run your entire business with our
           unified cloud software, designed to help you increase organizational
           efficiency.
@@ -83,7 +83,7 @@ export default function () {
         </div>
 
         <button className='group primary-btn mt-6 md:self-center'>
-          explore all products
+          try zoho one
           <span className='group-hover:translate-x-1 transition-transform duration-300 '>
             <FaChevronRight className=' ml-1' size={16} />
           </span>
