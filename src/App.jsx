@@ -8,6 +8,7 @@ import Zoho_one from './components/ZohoOne';
 import Testimonials from './components/Testimonials';
 import Zoho_enterprises from './components/zoho_enterprises';
 import Privacy from './components/Privacy';
+import Visions from './components/Visions';
 
 
 function App () {
@@ -20,6 +21,7 @@ function App () {
       <Testimonials/>
       <Zoho_enterprises/>
       <Privacy/>
+      <Visions/>
     </div>
   )
 }

@@ -36,7 +36,7 @@ h6 {
 *::before,
 *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  border: 1pt solid rgba(255, 0, 0, 0.5) !important;
+  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important; */
 }
 
 @layer base {
@@ -57,6 +57,28 @@ h6 {
   .trynow-btn {
     @apply flex items-center justify-center w-fit mt-4 px-3 py-2 font-medium capitalize  text-main;
   }
+
+  .privacy-card {
+    @apply relative aspect-square w-full max-w-[400px]  px-6 py-6  flex flex-col items-center overflow-hidden lg:py-8 lg:px-6;
+
+  }
+  .privacy-icon {
+
+   @apply  text-blue-400 bg-gradient-to-b from-blue-100/75 to-white border-2 border-blue-400 rounded-xl p-2; 
+
+  }
+
+  .privacy-title {
+
+    @apply  text-gray-700 font-Mont font-semibold text-xl pt-6 lg:drop-shadow-lg lg:text-2xl ;
+
+  }
+
+  .privacy-text {
+    @apply text-gray-700 text-base pt-4 text-left lg:drop-shadow-lg lg:text-lg ;
+
+  }
+
 }
 
 blockquote::before {

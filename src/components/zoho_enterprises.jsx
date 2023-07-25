@@ -23,8 +23,12 @@ export default function () {
   }
 
   return (
-    <div name='zoho_one_id'  className=' overflow-clip relative  mx-auto w-full max-w-screen-lg h-fit flex flex-col-reverse gap-8  items-center justify-center text-gray-700 px-12 py-16 lg:flex-row lg:gap-16 lg:py-24'
+    <div
+      name='zoho_enterprises'
+      className=' overflow-clip relative  mx-auto w-full max-w-screen-lg h-fit flex flex-col-reverse gap-8  items-center justify-center text-gray-700 px-12 py-16 lg:flex-row lg:gap-16 lg:py-24'
     >
+      <hr className=' absolute top-[0%] w-full max-w-4xl h-[1px] border border-gray-200 rounded-full  '></hr>
+
       <motion.div
         variants={pulse_anime}
         animate='animate'
@@ -47,8 +51,6 @@ export default function () {
       ></motion.div>
 
       <div className=' relative bg-white border-2 border-gray-200  backdrop-blur-md rounded-2xl shadow-xl h-fit max-w-sm flex flex-col gap-4 justify-center items-center px-4 py-6'>
-        
-
         <blockquote className=' text-gray-700 relative w-full h-fit py-8 px-8 mx-auto font-medium tracking-wide text-lg  lg:text-xl text-center'>
           With our complete business under control, our productivity is up by
           80% in the last year that we have been using Zoho.

@@ -28,7 +28,7 @@ export default function FeaturedApps () {
 
   const cardVariants = {
     initial: {
-      y: '100%'
+      y: '50%'
     },
     animate: ({id}) => ( {
       y: '0%',
@@ -37,7 +37,7 @@ export default function FeaturedApps () {
         type: 'spring',
         bounce: 0.2,
         duration: 1,
-        delay: 2 * id,
+        delay: 0.5 * id,
 
 
       }
@@ -144,7 +144,7 @@ export default function FeaturedApps () {
         animate='animate'
         className=' mx-auto absolute top-[-60%] left-0 right-0  aspect-square w-full max-w-[100vmin] bg-cyan-300 rounded-full mix-blend-soft-light opacity-50 filter blur-md'
       ></motion.div>
-      <div className=' mx-auto absolute top-0 left-0 right-0 h-full w-[100vw] bg-gradient-to-b from-cyan-100 to bg-white/0 mix-blend-soft-light opacity-65 filter blur-sm'></div>
+      <div className=' mx-auto absolute top-0 left-0 right-0 h-full w-[100vw] bg-gradient-to-b from-cyan-100 to-white mix-blend-soft-light opacity-65 filter blur-sm'></div>
 
       <div className='relative  max-w-screen-lg w-full h-full flex flex-col items-center text-center py-12 text-white lg:py-32'>
         

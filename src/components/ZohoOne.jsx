@@ -75,7 +75,7 @@ export default function () {
         animate='animate'
         className=' mx-auto my-auto absolute  left-0 right-0  aspect-square w-[100vmin] bg-yellow-300 rounded-full mix-blend-soft-light opacity-60 filter blur-md'
       ></motion.div>
-      {/* <div className=' mx-auto my-auto absolute  left-0 right-0 h-full w-full bg-gradient-to-t from-yellow-100 to bg-white/0 via-yellow-100 mix-blend-soft-light opacity-80 filter blur-sm'></div> */}
+      {/* <div className=' mx-auto my-auto absolute  left-0 right-0 h-full w-full bg-gradient-to-t from-yellow-100 to-white via-yellow-100 mix-blend-soft-light opacity-80 filter blur-sm'></div> */}
 
       <motion.div
         variants={fadein_anime}
