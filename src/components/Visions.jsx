@@ -26,7 +26,7 @@ export default function visions () {
       name='visions'
       className=' w-full h-fit flex flex-col items-center bg-white'
     >
-      <motion.div className=' max-w-screen-lg  flex flex-col  justify-center items-center px-8 pt-32 pb-8  md:flex-row-reverse md:pb-24 md:pt-40'>
+      <motion.div className=' max-w-screen-lg  flex flex-col  justify-center items-center px-8 py-16  md:flex-row-reverse md:pb-24 md:pt-40'>
         <motion.div
        
           className=' mx-auto rounded-2xl overflow-clip w-[60%] md:w-[40%] grayscale hover:grayscale-0 hover:rotate-2 scale-[0.8] transition-all duration-700'
