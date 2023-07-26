@@ -36,7 +36,7 @@ h6 {
 *::before,
 *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important; */
+  border: 1pt solid rgba(255, 0, 0, 0.5) !important;
 }
 
 @layer base {
@@ -60,25 +60,18 @@ h6 {
 
   .privacy-card {
     @apply relative h-full w-[90%]   p-6  flex flex-col items-center justify-center overflow-hidden md:basis-[40%] md:aspect-[1/0.9];
-
   }
   .privacy-icon {
-
-   @apply  text-blue-400 bg-gradient-to-b from-blue-100/75 to-white border-2 border-blue-400 rounded-xl p-2; 
-
+    @apply text-blue-400 bg-gradient-to-b from-blue-100/75 to-white border-2 border-blue-400 rounded-xl p-2;
   }
 
   .privacy-title {
-
-    @apply  text-gray-700 font-Mont font-semibold text-xl mt-6 lg:drop-shadow-lg lg:text-2xl ;
-
+    @apply text-gray-700 font-Mont font-semibold text-xl mt-6 lg:drop-shadow-lg lg:text-2xl;
   }
 
   .privacy-text {
-    @apply text-gray-700 text-base mt-4 text-left lg:drop-shadow-lg lg:text-lg md:max-w-sm ;
-
+    @apply text-gray-700 text-base mt-4 text-left lg:drop-shadow-lg lg:text-lg md:max-w-sm;
   }
-
 }
 
 blockquote::before {
@@ -112,7 +105,6 @@ blockquote::after {
 /* ------------------------LOGOS SCROLL-------------------------  */
 
 .main-clipper {
-
   position: relative;
   display: flex;
   flex-direction: column;
@@ -196,7 +188,6 @@ blockquote::after {
   }
 }
 
-
 .scroll-parent-two {
   height: 128px;
   width: 1638px;
@@ -208,7 +199,6 @@ blockquote::after {
   overflow: hidden;
 
   margin: 0;
-
 }
 
 .scroll-element-two {
@@ -221,13 +211,7 @@ blockquote::after {
   height: 100%;
 
   opacity: 0.5;
-
-
-
-
-
 }
-
 
 .primary-for-two {
   animation: primary 18s linear infinite;
@@ -247,7 +231,6 @@ blockquote::after {
   animation: secondary 18s linear infinite;
 }
 
-
 @keyframes secondary {
   from {
     left: 100%;
@@ -256,4 +239,61 @@ blockquote::after {
   to {
     left: 0%;
   }
+}
+
+/* --------------------------- FOOTER GRID ------------------------------ */
+
+
+
+.signup_block {
+  grid-area: signup_block;
+}
+
+.list_block{
+
+  grid-area: list_block;
+
+}
+
+.twitter_block {
+
+  grid-area: twitter_block;
+
+}
+
+.linkedIn_block {
+
+  grid-area: linkedIn_block;
+
+}
+
+.instagram_block {
+
+  grid-area: instagram_block;
+
+}
+
+.footer-grid-mobile {
+  gap: 1rem;
+
+  margin-inline: auto;
+
+  grid-template-areas:
+    'signup_block'
+    'twitter_block'
+    'linkedIn_block'
+    'instagram_block'
+    'list_block';
+}
+
+.footer-grid-desktop {
+  gap: 1rem;
+
+  margin-inline: auto;
+
+  grid-template-areas:
+    'daniel daniel kira kira'
+    'daniel daniel kira kira'
+    'patrick patrick jonathan jonathan'
+    'patrick patrick jeanette jeanette';
 }

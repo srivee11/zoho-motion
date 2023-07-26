@@ -9,6 +9,7 @@ import Testimonials from './components/Testimonials';
 import Zoho_enterprises from './components/zoho_enterprises';
 import Privacy from './components/Privacy';
 import Visions from './components/visions';
+import Footer from './Footer';
 
 
 function App () {
@@ -22,6 +23,7 @@ function App () {
       <Zoho_enterprises/>
       <Privacy/>
       <Visions/>
+      <Footer/>
     </div>
   )
 }

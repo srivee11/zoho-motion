@@ -52,7 +52,7 @@ export default function Privacy () {
           Privacy & Values
         </h3>
 
-        <div className=' mx-auto   w-full h-fit flex flex-col justify-center items-center text-center  lg:flex-row lg:flex-wrap '>
+        <div className=' mx-auto w-full h-fit flex flex-col justify-center items-center text-center  lg:flex-row lg:flex-wrap '>
           <div className=' privacy-card '>
             <span className='privacy-icon'>
               <FiLock size={56} strokeWidth={1}  />
