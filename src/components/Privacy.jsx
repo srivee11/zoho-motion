@@ -47,12 +47,12 @@ export default function Privacy () {
         className=' z-[-1] absolute bottom-[5vw] left-[10vw] aspect-square w-full max-w-[25vw] bg-pink-400 rounded-full mix-blend-soft-light opacity-50 filter blur-2xl'
       ></motion.div>
 
-      <div className=' mx-auto max-w-screen-lg w-full h-fit px-4 py-16 lg:py-32'>
-        <h3 className=' capitalize text-center text-2xl font-Mont font-medium tracking-wide text-gray-900  pb-6 sm:text-3xl '>
+      <div className=' mx-auto max-w-screen-lg w-full h-fit px-4 my-12 lg:my-12'>
+        <h3 className=' capitalize text-center text-2xl font-Mont font-medium tracking-wide text-gray-900 mt-8 mb-6 sm:text-3xl md:mt-32  '>
           Privacy & Values
         </h3>
 
-        <div className=' mx-auto   w-full h-fit flex flex-col gap-4 justify-center items-center text-center  lg:flex-row lg:gap-4 lg:flex-wrap '>
+        <div className=' mx-auto   w-full h-fit flex flex-col justify-center items-center text-center  lg:flex-row lg:flex-wrap '>
           <div className=' privacy-card '>
             <span className='privacy-icon'>
               <FiLock size={56} strokeWidth={1}  />
@@ -111,7 +111,7 @@ export default function Privacy () {
             </p>
           </div>
 
-          <div className='flex flex-col items-center justify-center gap-4 w-full h-fit pt-8 sm:flex-row sm:self-start  '>
+          <div className='flex flex-col items-center justify-center gap-4 w-full h-fit mt-8 sm:flex-row sm:self-start sm:mt-16 '>
             <button className='group primary-btn '>
               read more
               <span className='group-hover:translate-x-1 transition-transform duration-300 '>
