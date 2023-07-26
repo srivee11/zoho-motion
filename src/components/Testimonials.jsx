@@ -9,11 +9,7 @@ import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
 
 export default function Testimonials () {
-
-  const [counter, setCounter] = useState(false);
-
-
-
+  const [counter, setCounter] = useState(false)
 
   const testimonial_anime = {
     initial: {
@@ -27,44 +23,54 @@ export default function Testimonials () {
       className=' relative bg-gradient-to-b from-white/0 to bg-white/0 via-white/10 w-screen mx-auto h-fit flex flex-col items-center justify-center '
     >
       <div className='  max-w-screen-lg w-full h-full flex flex-col items-center text-center  py-24 lg:py-32'>
-
-      <ScrollTrigger onEnter={()=>setCounter(!counter)} onExit={()=>setCounter(false)} >
-
-      <h3 className=' capitalize text-xl font-Mont font-medium tracking-wide text-gray-900 w-full px-3  sm:text-3xl'>
-          More than
-          <span className=' font-Mont font-semibold text-main/90 '> {counter && <CountUp start={0} end={80} duration={2} delay={0.5} /> }+ million </span>
-          people
-        </h3>
-
-        
-        <h3 className='capitalize text-xl font-Mont font-medium tracking-wide text-gray-900 w-full px-3 py-2 sm:text-3xl'>
-          across
-          <span className=' font-Mont font-semibold text-main/90 '> {counter && <CountUp start={0} end={150} duration={2} delay={0.5} /> }+ </span>
-          countries choose zoho
-        </h3>
-
-      </ScrollTrigger>
-
-       
-
-
-        <motion.div
-          variants={testimonial_anime}
-          initial='initial'
-          className=' relative main-clipper mt-16 flex flex-col space-y-8 filter  '
+        <ScrollTrigger
+          onEnter={() => setCounter(!counter)}
+          onExit={() => setCounter(false)}
         >
+          <h3 className=' capitalize text-xl font-Mont font-medium tracking-wide text-gray-900 w-full px-3  sm:text-3xl'>
+            More than
+            <span className=' px-1 font-Mont font-semibold text-main/90 '>
+              
+              {counter && (
+                <CountUp start={0} end={80} duration={2} delay={0.5} />
+              )}
+              + million
+            </span>
+            people
+          </h3>
+
+          <h3 className='capitalize text-xl font-Mont font-medium tracking-wide text-gray-900 w-full px-3 py-2 sm:text-3xl'>
+            across
+            <span className=' px-1 font-Mont font-semibold text-main/90 '>
+              
+              {counter && (
+                <CountUp start={0} end={150} duration={2} delay={0.5} />
+              )}
+              +
+            </span>
+            countries choose zoho
+          </h3>
+        </ScrollTrigger>
+
+        <div className=' relative main-clipper mt-16 flex flex-col space-y-8 filter  '>
           <div className=' mx-auto absolute top-0 left-0 right-0 aspect-square w-full '></div>
 
-          <div className='scroll-parent-one '>
+          <div
+            
+            className='scroll-parent-one '
+          >
             <div className='scroll-element-one  primary-for-one'></div>
             <div className='scroll-element-one secondary-for-one'></div>
           </div>
 
-          <div class='scroll-parent-two'>
-            <div class='scroll-element-two primary-for-two bg-red-400 bg-clip-content '></div>
+          <div
+           
+            class='scroll-parent-two'
+          >
+            <div class='scroll-element-two primary-for-two '></div>
             <div class='scroll-element-two secondary-for-two'></div>
           </div>
-        </motion.div>
+        </div>
 
         <div className=' mx-auto mt-8 flex flex-col items-center w-full gap-4 sm:flex-row sm:self-start sm:justify-center '>
           <button className='group primary-btn '>

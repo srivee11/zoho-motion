@@ -36,7 +36,7 @@ h6 {
 *::before,
 *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  border: 1pt solid rgba(255, 0, 0, 0.5) !important;
+  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important;   */
 }
 
 @layer base {
@@ -149,29 +149,10 @@ blockquote::after {
   z-index: -1;
 }
 
-.main-clipper::after {
-  position: absolute;
-
-  content: '';
-  width: calc(100% + 8px);
-  height: calc(100% + 8px);
-
-  background-image: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0) 65%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  top: calc(50% - (100% + 8px) / 2);
-  left: calc(50% - (100% + 8px) / 2);
-
-  --standard-box-shadow: rgba(8, 6, 65, 0.15) 0px 5px 15px 0px;
-  box-shadow: var(--standard-box-shadow);
-}
 
 .scroll-parent-one {
-  width: 3381.94px;
-  height: 132px;
+  width: 1229.82px;
+  height: 48px;
 
   z-index: -2;
 
@@ -182,8 +163,10 @@ blockquote::after {
 }
 
 .scroll-element-one {
-  height: 132px;
-  width: 3381.94px;
+  
+  width: 1229.82px;
+  height: 48px;
+
   background: url(assets/testimonial_new_strip.png);
   position: absolute;
   top: 0%;
@@ -223,8 +206,8 @@ blockquote::after {
 }
 
 .scroll-parent-two {
-  height: 132px;
-  width: 3381.94px;
+  width: 1229.82px;
+  height: 48px;
 
   z-index: -2;
 
@@ -236,8 +219,8 @@ blockquote::after {
 }
 
 .scroll-element-two {
-  height: 132px;
-  width: 3381.94px;
+  width: 1229.82px;
+  height: 48px;
   background: url(assets/testimonial_new_strip.png);
   position: absolute;
   top: 0%;
