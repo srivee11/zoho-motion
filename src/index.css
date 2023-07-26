@@ -244,7 +244,7 @@ blockquote::after {
 /* --------------------------- FOOTER GRID ------------------------------ */
 
 
-
+/* 
 .signup_block {
   grid-area: signup_block;
 }
@@ -279,9 +279,9 @@ blockquote::after {
   margin-inline: auto;
 
   grid-template-areas:
-    'signup_block'
-    'twitter_block'
-    'linkedIn_block'
+    'signup_block signup_block'
+    'twitter_block twitter_block'
+    'twitter_block twitter_block'
     'instagram_block'
     'list_block';
 }
@@ -292,8 +292,5 @@ blockquote::after {
   margin-inline: auto;
 
   grid-template-areas:
-    'daniel daniel kira kira'
-    'daniel daniel kira kira'
-    'patrick patrick jonathan jonathan'
-    'patrick patrick jeanette jeanette';
-}
+    'signup_block signup_block signup_block signup_block';
+} */

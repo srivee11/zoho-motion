@@ -29,9 +29,9 @@ export default function visions () {
       <motion.div className=' max-w-screen-lg  flex flex-col  justify-center items-center px-8 py-16  md:flex-row-reverse md:pb-24 md:pt-40'>
         <motion.div
        
-          className=' mx-auto rounded-2xl overflow-clip w-[60%] md:w-[40%] grayscale hover:grayscale-0 hover:rotate-2 scale-[0.8] transition-all duration-700'
+          className=' mx-auto rounded-2xl overflow-clip w-[60%] md:w-[40%]  hover:rotate-2 scale-[0.8] transition-transform duration-1000'
         >
-          <img src={zoho_ceo} alt='zoho_ceo_img'/>
+          <img className=' grayscale hover:grayscale-0 transition-colors duration-1000 ' src={zoho_ceo} alt='zoho_ceo_img'/>
         </motion.div>
 
         <div className=' flex flex-col  gap-2 justify-center items-center w-full h-full md:w-[60%] '>
