@@ -4,17 +4,9 @@ import { animate, motion, useCycle, useInView } from 'framer-motion'
 
 import { FaChevronRight, FaArrowCircleRight } from 'react-icons/fa'
 
-import {HiMiniSparkles} from 'react-icons/hi2'
+import { HiMiniSparkles } from 'react-icons/hi2'
 
-import {
-  FiAnchor,
-  FiTarget,
-  FiSun,
-  FiCpu,
-  FiZap,
-  FiLock,
-  FiPlayCircle
-} from 'react-icons/fi'
+import { BsTwitter, BsLinkedin, BsYoutube, BsFacebook } from 'react-icons/bs'
 
 const pulse_anime = {
   animate: {
@@ -35,9 +27,13 @@ export default function Footer () {
     <div className=' relative w-screen h-fit mx-auto flex flex-col justify-center items-center bg-gradient-to-t from-cyan-50 to-white text-gray-700 p-6'>
       <div className=' w-full max-w-screen-lg grid grid-cols-4 grid-rows-4 gap-2 '>
         <div className='footer-container-styles col-span-4 row-span-2 flex flex-col gap-3 justify-center items-center py-8 px-6'>
-          <p className=' text-main font-Mont capitalize mt-6 text-2xl tracking-[-1px] font-semibold md:text-4xl lg:text-3xl'>Ready to do your best work?</p>
-          <p className=' text-xl capitalize tracking-wider  text-gray-500' >Let's get you started</p>
-          <button className='group primary-btn-black mt-6'>
+          <p className=' text-main font-Mont capitalize mt-6 text-2xl tracking-[-1px] font-semibold md:text-4xl lg:text-3xl'>
+            Ready to do your best work?
+          </p>
+          <p className=' text-xl capitalize tracking-wider  text-gray-500'>
+            Let's get you started
+          </p>
+          <button className='group primary-btn-black mt-3 mb-6'>
             access your apps
             <span className=' group-hover:scale-105 transition-transform duration-300 '>
               <HiMiniSparkles className=' ml-2' size={28} />
@@ -72,26 +68,30 @@ export default function Footer () {
               <a className=' footer-links '>about us</a>
               <a className=' footer-links '>Press </a>
               <a className=' footer-links '>events </a>
-          
             </span>
           </span>
         </div>
 
-        <div className='footer-container-styles  flex justify-center items-center py-2 px-2 '>
-          <span className=' privacy-icon '>
-            <FiAnchor size={56} strokeWidth={1} />
+        <div className='footer-container-styles group flex justify-center items-center py-2 px-2 '>
+          <span className=' footer-icon '>
+            <BsTwitter size={48}/>
           </span>
         </div>
 
-        <div className='footer-container-styles  flex  justify-center items-center py-2 px-2 '>
-          <span className=' privacy-icon '>
-            <FiCpu size={56} strokeWidth={1} />
+        <div className='footer-container-styles group flex  justify-center items-center py-2 px-2 '>
+          <span className=' footer-icon '>
+            <BsLinkedin size={48}/>
           </span>
         </div>
 
-        <div className='footer-container-styles   flex  justify-center items-center py-2 px-2 '>
-          <span className=' privacy-icon '>
-            <FiLock size={56} strokeWidth={1} />
+        <div className='footer-container-styles  group flex  justify-center items-center py-2 px-2 '>
+          <span className=' footer-icon '>
+            <BsFacebook size={48}/>
+          </span>
+        </div>
+        <div className='footer-container-styles group  flex  justify-center items-center py-2 px-2 '>
+          <span className=' footer-icon '>
+            <BsYoutube size={48}/>
           </span>
         </div>
       </div>

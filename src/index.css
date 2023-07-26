@@ -97,8 +97,12 @@ h6 {
 
   .footer-links {
 
-    @apply capitalize text-left text-base  text-gray-400 hover:text-main/90 transition-colors duration-300;
+    @apply capitalize cursor-pointer text-left text-base  text-gray-400 hover:text-main/90 ;
 
+  }
+
+  .footer-icon {
+    @apply text-slate-600 group-hover:scale-105 transition-transform duration-500;
   }
 
 }
