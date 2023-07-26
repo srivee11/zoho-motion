@@ -60,17 +60,17 @@ export default function Testimonials () {
                 
           </div>
 
-          <div class='scroll-parent-two'>
+          {/* <div class='scroll-parent-two'>
             <div class='scroll-element-two primary-for-two '></div>
             <div class='scroll-element-two secondary-for-two'></div>
 
             <div className=' absolute top-[-50%] left-[0%] aspect-square w-screen max-w-[25vmin] bg-gradient-to-r from-white to-white/75 via-white rounded-full  opacity-100 filter blur-xl '></div>
             <div className=' absolute top-[-50%] right-[0%] aspect-square w-screen max-w-[25vmin] bg-gradient-to-l from-white to-white/75 via-white rounded-full  opacity-100 filter blur-xl '></div>
 
-          </div>
+          </div> */}
         </div>
 
-        <div className=' mx-auto mt-8 flex flex-col items-center w-full gap-4 sm:flex-row sm:self-start sm:justify-center '>
+        <div className=' mx-auto mt-32 flex flex-col items-center w-full gap-4 sm:flex-row sm:self-start sm:justify-center '>
           <button className='group primary-btn '>
             customer stories
             <span className='group-hover:translate-x-1 transition-transform duration-300 '>

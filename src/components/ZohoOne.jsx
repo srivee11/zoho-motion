@@ -19,18 +19,18 @@ export default function () {
 
   const fadein_anime = {
     initial: {
-      opacity: 0,
-      y: '10vmin'
+      opacity: 1,
+      scale: 0.85
     },
     animate: {
       opacity: 1,
-      y: '0%',
+      scale: 1,
 
       transition: {
         type: 'spring',
-        delay: 0.5,
-        duration: 2,
-        bounce: 0.5
+        duration: 1.5,
+        bounce: 0.5,
+        delay: 0.5
       }
     }
   }
