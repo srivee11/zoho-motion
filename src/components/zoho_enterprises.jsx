@@ -27,7 +27,7 @@ export default function () {
       name='zoho_enterprises'
       className=' overflow-clip relative  mx-auto w-screen max-w-screen-lg h-fit flex flex-col-reverse gap-8  items-center justify-center text-gray-700 px-12 py-16 lg:flex-row lg:gap-16 lg:py-24'
     >
-      <hr className=' absolute top-[0%] w-full max-w-4xl h-[1px] border border-gray-200 rounded-full  '></hr>
+      <hr className=' absolute top-[0%] w-full max-w-4xl h-[1px] border border-gray-200 rounded-full  '/>
 
       <motion.div
         variants={pulse_anime}

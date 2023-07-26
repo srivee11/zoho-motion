@@ -30,7 +30,6 @@ export default function Testimonials () {
           <h3 className=' capitalize text-xl font-Mont font-medium tracking-wide text-gray-900 w-full px-3  sm:text-3xl'>
             More than
             <span className=' px-1 font-Mont font-semibold text-main/90 '>
-              
               {counter && (
                 <CountUp start={0} end={80} duration={2} delay={0.5} />
               )}
@@ -42,7 +41,6 @@ export default function Testimonials () {
           <h3 className='capitalize text-xl font-Mont font-medium tracking-wide text-gray-900 w-full px-3 py-2 sm:text-3xl'>
             across
             <span className=' px-1 font-Mont font-semibold text-main/90 '>
-              
               {counter && (
                 <CountUp start={0} end={150} duration={2} delay={0.5} />
               )}
@@ -52,23 +50,23 @@ export default function Testimonials () {
           </h3>
         </ScrollTrigger>
 
-        <div className=' relative main-clipper mt-16 flex flex-col space-y-8 filter  '>
-          <div className=' mx-auto absolute top-0 left-0 right-0 aspect-square w-full '></div>
-
-          <div
-            
-            className='scroll-parent-one '
-          >
+        <div className=' relative main-clipper mt-16 flex flex-col space-y-8  '>
+          <div className='scroll-parent-one '>
             <div className='scroll-element-one  primary-for-one'></div>
             <div className='scroll-element-one secondary-for-one'></div>
+
+            <div className=' absolute top-[-50%] left-[0%] aspect-square w-screen max-w-[25vmin] bg-gradient-to-r from-white to-white/75 via-white rounded-full  opacity-100 filter blur-xl '></div>
+            <div className=' absolute top-[-50%] right-[0%] aspect-square w-screen max-w-[25vmin] bg-gradient-to-l from-white to-white/75 via-white rounded-full  opacity-100 filter blur-xl '></div>
+                
           </div>
 
-          <div
-           
-            class='scroll-parent-two'
-          >
+          <div class='scroll-parent-two'>
             <div class='scroll-element-two primary-for-two '></div>
             <div class='scroll-element-two secondary-for-two'></div>
+
+            <div className=' absolute top-[-50%] left-[0%] aspect-square w-screen max-w-[25vmin] bg-gradient-to-r from-white to-white/75 via-white rounded-full  opacity-100 filter blur-xl '></div>
+            <div className=' absolute top-[-50%] right-[0%] aspect-square w-screen max-w-[25vmin] bg-gradient-to-l from-white to-white/75 via-white rounded-full  opacity-100 filter blur-xl '></div>
+
           </div>
         </div>
 
