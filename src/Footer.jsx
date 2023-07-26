@@ -25,7 +25,7 @@ const pulse_anime = {
 export default function Footer () {
   return (
     <div className=' relative w-screen h-fit mx-auto flex flex-col justify-center items-center bg-gradient-to-t from-cyan-50 to-white text-gray-700 p-6'>
-      <div className=' w-full max-w-screen-lg grid grid-cols-4 grid-rows-4 gap-2 '>
+      <div className=' w-full max-w-screen-lg grid grid-cols-4 grid-rows-4 gap-6 '>
         <div className='footer-container-styles col-span-4 row-span-2 flex flex-col gap-3 justify-center items-center py-8 px-6'>
           <p className=' text-main font-Mont capitalize mt-6 text-2xl tracking-[-1px] font-semibold md:text-4xl lg:text-3xl'>
             Ready to do your best work?
@@ -41,7 +41,7 @@ export default function Footer () {
           </button>
         </div>
 
-        <div className='footer-container-styles  col-span-2 row-span-2 flex flex-row gap-6 justify-start items-start py-6 px-6 '>
+        <div className='footer-container-styles  col-span-2 row-span-2 flex flex-row gap-8 justify-center items-start py-6 px-6 '>
           <span>
             <span className=' flex flex-col'>
               <p className=' footer-list-title '>Apps</p>
@@ -72,28 +72,34 @@ export default function Footer () {
           </span>
         </div>
 
-        <div className='footer-container-styles group flex justify-center items-center py-2 px-2 '>
+        <div className='footer-container-styles group col-span-1 row-span-2 flex justify-center items-start py-6 px-6 '>
+
+        
+            <span className=' flex flex-col'>
+              <p className=' footer-list-title '>contact sales</p>
+              <a className=' footer-links '>phone</a>
+              <a className=' footer-links underline'>1800 103 1123 </a>
+              <a className=' footer-links '>email </a>
+              <a className=' footer-links '>sales@zohocorp.com </a>
+            </span>
+
+
+        </div>
+
+        <div className='footer-container-styles col-span-1 row-span-2  flex flex-col gap-2  justify-start items-center py-6 px-6 '>
+          <p className=' footer-list-title '>follow us</p>
+
           <span className=' footer-icon '>
-            <BsTwitter size={48}/>
+            <BsLinkedin size={32} />
+          </span>
+          <span className=' footer-icon '>
+            <BsTwitter size={32} />
+          </span>
+          <span className=' footer-icon '>
+            <BsYoutube size={32} />
           </span>
         </div>
 
-        <div className='footer-container-styles group flex  justify-center items-center py-2 px-2 '>
-          <span className=' footer-icon '>
-            <BsLinkedin size={48}/>
-          </span>
-        </div>
-
-        <div className='footer-container-styles  group flex  justify-center items-center py-2 px-2 '>
-          <span className=' footer-icon '>
-            <BsFacebook size={48}/>
-          </span>
-        </div>
-        <div className='footer-container-styles group  flex  justify-center items-center py-2 px-2 '>
-          <span className=' footer-icon '>
-            <BsYoutube size={48}/>
-          </span>
-        </div>
       </div>
     </div>
   )

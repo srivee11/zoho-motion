@@ -72,7 +72,7 @@ h6 {
     @apply relative h-full w-[90%]   p-6  flex flex-col items-center justify-center overflow-hidden md:basis-[40%] md:aspect-[1/0.9];
   }
   .privacy-icon {
-    @apply text-blue-400 bg-gradient-to-b from-blue-100/75 to-white border-2 border-blue-400 rounded-xl p-2;
+    @apply text-blue-400 bg-gradient-to-b from-cyan-50 to-white border-2 border-blue-400 rounded-xl p-2;
   }
 
   .privacy-title {
@@ -91,7 +91,7 @@ h6 {
 
   .footer-list-title {
 
-    @apply capitalize text-gray-500 text-left text-lg font-Mont font-medium tracking-wide mt-4 mb-3 sm:text-2xl;
+    @apply capitalize text-gray-500 text-left text-lg font-Mont font-medium tracking-wide mt-4 mb-3 sm:text-xl;
 
   }
 
@@ -102,7 +102,7 @@ h6 {
   }
 
   .footer-icon {
-    @apply text-slate-600 group-hover:scale-105 transition-transform duration-500;
+    @apply text-slate-500 hover:scale-110 transition-transform duration-300;
   }
 
 }
