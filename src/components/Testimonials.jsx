@@ -17,7 +17,7 @@ export default function Testimonials () {
 
   const testimonial_anime = {
     initial: {
-      scale: 0.8
+      scale: 1
     }
   }
 
@@ -28,7 +28,7 @@ export default function Testimonials () {
     >
       <div className='  max-w-screen-lg w-full h-full flex flex-col items-center text-center  py-24 lg:py-32'>
 
-      <ScrollTrigger onEnter={()=>setCounter(!counter)} >
+      <ScrollTrigger onEnter={()=>setCounter(!counter)} onExit={()=>setCounter(false)} >
 
       <h3 className=' capitalize text-xl font-Mont font-medium tracking-wide text-gray-900 w-full px-3  sm:text-3xl'>
           More than
@@ -61,7 +61,7 @@ export default function Testimonials () {
           </div>
 
           <div class='scroll-parent-two'>
-            <div class='scroll-element-two primary-for-two'></div>
+            <div class='scroll-element-two primary-for-two bg-red-400 bg-clip-content '></div>
             <div class='scroll-element-two secondary-for-two'></div>
           </div>
         </motion.div>

@@ -36,7 +36,7 @@ h6 {
 *::before,
 *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important; */
+  border: 1pt solid rgba(255, 0, 0, 0.5) !important;
 }
 
 @layer base {
@@ -170,8 +170,8 @@ blockquote::after {
 }
 
 .scroll-parent-one {
-  width: 1638px;
-  height: 128px;
+  width: 3381.94px;
+  height: 132px;
 
   z-index: -2;
 
@@ -182,15 +182,16 @@ blockquote::after {
 }
 
 .scroll-element-one {
-  width: 1638px;
-  height: 128px;
-  background: url(assets/testimonial_strip1.png);
+  height: 132px;
+  width: 3381.94px;
+  background: url(assets/testimonial_new_strip.png);
   position: absolute;
   top: 0%;
   left: 0%;
   height: 100%;
 
   opacity: 0.5;
+
 }
 
 .primary-for-one {
@@ -222,8 +223,8 @@ blockquote::after {
 }
 
 .scroll-parent-two {
-  height: 128px;
-  width: 1638px;
+  height: 132px;
+  width: 3381.94px;
 
   z-index: -2;
 
@@ -235,15 +236,16 @@ blockquote::after {
 }
 
 .scroll-element-two {
-  height: 128px;
-  width: 1638px;
-  background: url(assets/testimonial_strip2.png);
+  height: 132px;
+  width: 3381.94px;
+  background: url(assets/testimonial_new_strip.png);
   position: absolute;
   top: 0%;
   left: 0%;
   height: 100%;
 
   opacity: 0.5;
+
 }
 
 .primary-for-two {
@@ -273,57 +275,3 @@ blockquote::after {
     left: 0%;
   }
 }
-
-/* --------------------------- FOOTER GRID ------------------------------ */
-
-
-/* 
-.signup_block {
-  grid-area: signup_block;
-}
-
-.list_block{
-
-  grid-area: list_block;
-
-}
-
-.twitter_block {
-
-  grid-area: twitter_block;
-
-}
-
-.linkedIn_block {
-
-  grid-area: linkedIn_block;
-
-}
-
-.instagram_block {
-
-  grid-area: instagram_block;
-
-}
-
-.footer-grid-mobile {
-  gap: 1rem;
-
-  margin-inline: auto;
-
-  grid-template-areas:
-    'signup_block signup_block'
-    'twitter_block twitter_block'
-    'twitter_block twitter_block'
-    'instagram_block'
-    'list_block';
-}
-
-.footer-grid-desktop {
-  gap: 1rem;
-
-  margin-inline: auto;
-
-  grid-template-areas:
-    'signup_block signup_block signup_block signup_block';
-} */

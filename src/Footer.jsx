@@ -78,7 +78,7 @@ export default function Footer () {
             <span className=' flex flex-col'>
               <p className=' footer-list-title '>contact sales</p>
               <a className=' footer-links '>phone</a>
-              <a className=' footer-links underline'>1800 103 1123 </a>
+              <a className=' footer-links underline mb-2'>1800 103 1123 </a>
               <a className=' footer-links '>email </a>
               <a className=' footer-links '>sales@zohocorp.com </a>
             </span>
