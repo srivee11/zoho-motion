@@ -53,7 +53,7 @@ export default function () {
   return (
     <div
       name='zoho_one_id'
-      className=' relative w-full h-fit flex flex-col items-center justify-center  py-12 px-4  lg:py-32 '
+      className=' relative w-screen h-fit flex flex-col items-center justify-center  py-12 px-4  lg:py-32 '
     >
       <motion.div
         variants={pulse_anime}

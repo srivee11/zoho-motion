@@ -84,7 +84,7 @@ export default function NavBar () {
            
               <Link 
               key={id}
-              className='capitalize px-4 py-2 font-medium w-full mx-auto text-center cursor-pointer text-gray-700 hover:bg-gray-200 transition-all '
+              className='capitalize px-4 py-2 font-medium w-screen mx-auto text-center cursor-pointer text-gray-700 hover:bg-gray-200 transition-all '
                 onClick={() => setNav(!nav)}
                 to={link}
                 smooth

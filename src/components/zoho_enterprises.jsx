@@ -25,7 +25,7 @@ export default function () {
   return (
     <div
       name='zoho_enterprises'
-      className=' overflow-clip relative  mx-auto w-full max-w-screen-lg h-fit flex flex-col-reverse gap-8  items-center justify-center text-gray-700 px-12 py-16 lg:flex-row lg:gap-16 lg:py-24'
+      className=' overflow-clip relative  mx-auto w-screen max-w-screen-lg h-fit flex flex-col-reverse gap-8  items-center justify-center text-gray-700 px-12 py-16 lg:flex-row lg:gap-16 lg:py-24'
     >
       <hr className=' absolute top-[0%] w-full max-w-4xl h-[1px] border border-gray-200 rounded-full  '></hr>
 

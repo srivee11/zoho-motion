@@ -121,7 +121,7 @@ export default function FeaturedApps () {
 
   return (
     <div
-      className=' overflow-hidden relative w-full h-fit flex flex-col justify-start items-center'
+      className=' overflow-hidden relative w-screen h-fit flex flex-col justify-start items-center'
       name='products'
     >
       <motion.div

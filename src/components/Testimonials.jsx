@@ -14,7 +14,7 @@ export default function Testimonials () {
   return (
     <div
       name='customers'
-      className=' relative bg-gradient-to-b from-white/0 to bg-white/0 via-white/10 w-full mx-auto h-fit flex flex-col items-center justify-center '
+      className=' relative bg-gradient-to-b from-white/0 to bg-white/0 via-white/10 w-screen mx-auto h-fit flex flex-col items-center justify-center '
     >
       <div className='  max-w-screen-lg w-full h-full flex flex-col items-center text-center  py-24 lg:py-32'>
         <h3 className=' capitalize text-xl font-Mont font-medium tracking-wide text-gray-900 w-full px-3  sm:text-3xl'>

@@ -60,7 +60,7 @@ export default function Home () {
   return (
     <div
       name='home'
-      className=' w-full h-fit flex flex-col items-center bg-white'
+      className=' w-screen h-fit flex flex-col items-center bg-white'
     >
       <motion.div
         variants={fadein_anime}
