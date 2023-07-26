@@ -50,7 +50,7 @@ export default function NavBar () {
       <div className=' hidden  lg:flex lg:gap-2'>
         {links.map(({ id, link, offset }) => (
          
-            <Link key={id} className=' capitalize px-4 py-2 font-medium rounded-md cursor-pointer text-gray-700 hover:bg-gray-200 transition-all  ' to={link} smooth offset={offset} duration={500}>
+            <Link key={id} className=' capitalize px-4 py-2 font-medium rounded-md cursor-pointer text-gray-500 hover:bg-gray-200 transition-all  ' to={link} smooth offset={offset} duration={500}>
               {link} 
             </Link>
           
@@ -77,14 +77,14 @@ export default function NavBar () {
       </div>
 
       {nav && (
-        <div className='  flex flex-col justify-start items-center absolute top-0 left-0 right-0 mt-20 mx-auto w-screen h-fit rounded-xl border-2 border-gray-200 bg-white text-gray-700'>
+        <div className='  flex flex-col justify-start items-center absolute top-0 left-0 right-0 mt-20 mx-auto w-full max-w-sm h-fit rounded-xl border-2 border-gray-200 bg-white text-gray-500'>
           {links.map(({ id, link }) => (
            
               
            
               <Link 
               key={id}
-              className='capitalize px-4 py-2 font-medium w-screen mx-auto text-center cursor-pointer text-gray-700 hover:bg-gray-200 transition-all '
+              className='capitalize px-4 py-2 font-medium w-full mx-auto text-center cursor-pointer text-gray-500 hover:bg-gray-200 transition-all '
                 onClick={() => setNav(!nav)}
                 to={link}
                 smooth

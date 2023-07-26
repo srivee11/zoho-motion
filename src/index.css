@@ -36,7 +36,7 @@ h6 {
 *::before,
 *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  border: 1pt solid rgba(255, 0, 0, 0.5) !important;
+  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important; */
 }
 
 @layer base {
@@ -46,8 +46,18 @@ h6 {
 }
 
 @layer components {
+
+  .primary-btn-black {
+    @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse  text-white bg-gray-800 border-gray-800 transition-all;
+  }
+
+  
+  .secondary-btn-black {
+    @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse text-gray-900 border-gray-800 bg-white transition-all;
+  }
+
   .primary-btn {
-    @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse  text-white bg-main border-main hover:bg-accent hover:border-accent transition-all;
+    @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse  text-white bg-main border-main transition-all;
   }
 
   .secondary-btn {
@@ -72,6 +82,25 @@ h6 {
   .privacy-text {
     @apply text-gray-700 text-base mt-4 text-left lg:drop-shadow-lg lg:text-lg md:max-w-sm;
   }
+
+  .footer-container-styles {
+
+    @apply rounded-2xl border-2 border-gray-200 shadow-lg bg-white;
+
+  }
+
+  .footer-list-title {
+
+    @apply capitalize text-gray-500 text-left text-lg font-Mont font-medium tracking-wide mt-4 mb-3 sm:text-2xl;
+
+  }
+
+  .footer-links {
+
+    @apply capitalize text-left text-base  text-gray-400 hover:text-main/90 transition-colors duration-300;
+
+  }
+
 }
 
 blockquote::before {

@@ -84,18 +84,18 @@ export default function Home () {
           <p className=' overflow-clip  text-gray-600  w-full py-4 text-xl md:text-2xl lg:text-2xl lg: max-w-[600px]'>
             Powerful software suite to transform the way you work. Designed for
             businesses of all sizes, built by a company that
-            <span className=' font-medium'> values your privacy.</span>
+            <span className=' font-medium hover:text-main/80 transition-colors duration-300'> values your privacy.</span>
           </p>
 
           <div className='flex flex-col items-center gap-4 sm:flex-row sm:self-start sm:justify-center '>
-            <button className='group primary-btn '>
+            <button className='group primary-btn-black '>
               get started for free
               <span className='group-hover:translate-x-1 transition-transform duration-300 '>
                 <FaChevronRight className=' ml-1' size={16} />
               </span>
             </button>
 
-            <button className='group secondary-btn'>
+            <button className='group secondary-btn-black'>
               explore all products
               <span className='group-hover:translate-x-1 transition-transform duration-300 '>
                 <FaChevronRight className=' ml-1' size={16} />
