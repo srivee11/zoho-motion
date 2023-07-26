@@ -30,7 +30,7 @@ const pulse_anime = {
 export default function Privacy () {
   return (
     <div
-      className=' overflow-hidden relative w-screen h-fit flex flex-col justify-center items-center '
+      className=' overflow-hidden relative mx-auto w-screen h-fit flex flex-col justify-center items-center '
       name='privacy'
     >
       <hr className=' absolute bottom-[0%] w-full max-w-md h-[1px] border border-gray-200 rounded-full  '></hr>

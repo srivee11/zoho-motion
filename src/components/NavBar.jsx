@@ -77,7 +77,7 @@ export default function NavBar () {
       </div>
 
       {nav && (
-        <div className='  flex flex-col justify-start items-center absolute top-0 left-0 right-0 mt-20 mx-auto w-full h-fit rounded-xl border-2 border-gray-200 bg-white text-gray-700'>
+        <div className='  flex flex-col justify-start items-center absolute top-0 left-0 right-0 mt-20 mx-auto w-screen h-fit rounded-xl border-2 border-gray-200 bg-white text-gray-700'>
           {links.map(({ id, link }) => (
            
               

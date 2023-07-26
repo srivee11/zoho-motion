@@ -13,7 +13,7 @@ import Visions from './components/visions';
 
 function App () {
   return (
-    <div>
+    <div className=' overflow-hidden max-w-[100vw]' >
       <NavBar/>
       <Home/>
       <FeaturedApps/>

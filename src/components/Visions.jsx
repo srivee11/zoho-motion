@@ -24,7 +24,7 @@ export default function visions () {
   return (
     <div
       name='visions'
-      className=' w-screen h-fit flex flex-col items-center bg-white'
+      className=' mx-auto w-screen h-fit flex flex-col items-center bg-white'
     >
       <motion.div className=' max-w-screen-lg  flex flex-col  justify-center items-center px-8 py-16  md:flex-row-reverse md:pb-24 md:pt-40'>
         <motion.div

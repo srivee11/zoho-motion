@@ -121,28 +121,28 @@ export default function FeaturedApps () {
 
   return (
     <div
-      className=' overflow-hidden relative w-screen h-fit flex flex-col justify-start items-center'
+      className=' overflow-hidden relative mx-auto w-screen h-fit flex flex-col justify-center items-center'
       name='products'
     >
       <motion.div
         variants={pulse_anime}
         animate='animate'
-        className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-full max-w-[60vmin] bg-violet-700 rounded-full mix-blend-soft-light opacity-80 filter blur-md'
+        className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-screen max-w-[60vmin] bg-violet-700 rounded-full mix-blend-soft-light opacity-80 filter blur-md'
       ></motion.div>
       <motion.div
         variants={pulse_anime}
         animate='animate'
-        className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[80vmin] bg-indigo-600 rounded-full mix-blend-soft-light opacity-90 filter blur-md'
+        className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-screen max-w-[80vmin] bg-indigo-600 rounded-full mix-blend-soft-light opacity-90 filter blur-md'
       ></motion.div>
       <motion.div
         variants={pulse_anime}
         animate='animate'
-        className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-full max-w-[90vmin] bg-blue-500 rounded-full mix-blend-soft-light opacity-60 filter blur-md'
+        className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-screen max-w-[90vmin] bg-blue-500 rounded-full mix-blend-soft-light opacity-60 filter blur-md'
       ></motion.div>
       <motion.div
         variants={pulse_anime}
         animate='animate'
-        className=' mx-auto absolute top-[-60%] left-0 right-0  aspect-square w-full max-w-[100vmin] bg-cyan-300 rounded-full mix-blend-soft-light opacity-50 filter blur-md'
+        className=' mx-auto absolute top-[-60%] left-0 right-0  aspect-square w-screen max-w-[100vmin] bg-cyan-300 rounded-full mix-blend-soft-light opacity-50 filter blur-md'
       ></motion.div>
       <div className=' mx-auto absolute top-0 left-0 right-0 h-full w-[100vw] bg-gradient-to-b from-cyan-100 to-white mix-blend-soft-light opacity-65 filter blur-sm'></div>
 
