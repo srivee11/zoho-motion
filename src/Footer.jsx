@@ -24,8 +24,8 @@ const pulse_anime = {
 
 export default function Footer () {
   return (
-    <div className=' relative w-screen h-fit mx-auto flex flex-col justify-center items-center bg-gradient-to-t from-cyan-50 to-white text-gray-700 p-6'>
-      <div className=' w-full max-w-screen-lg grid grid-cols-4 grid-rows-4 gap-4 lg:gap-6 '>
+    <div className=' relative w-screen h-fit mx-auto flex flex-col justify-center items-center bg-gradient-to-t from-cyan-100 to-white via-cyan-50 text-gray-700 p-6'>
+      <div className=' w-full max-w-screen-lg grid grid-cols-4 grid-rows-3 gap-4 lg:grid-rows-4 lg:gap-6 '>
         <div className='footer-container-styles col-span-4 lg:col-span-4 lg:row-span-2 flex flex-col gap-3 justify-center items-center px-4 py-3 lg:py-8 lg:px-6'>
           <p className=' text-main/90 font-Mont capitalize mt-6 text-xl tracking-[-1px] font-semibold md:text-4xl lg:text-3xl'>
             Ready to do your best work?

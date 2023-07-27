@@ -34,8 +34,8 @@ export default function () {
       transition: {
         type: 'spring',
         duration: 1.5,
-        bounce: 0.5,
-        delay: 0.5
+        bounce: 0.3,
+        delay: 0.8
       }
     }
   }
