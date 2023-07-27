@@ -34,7 +34,6 @@ export default function Privacy () {
       name='privacy'
     >
       <hr className=' absolute bottom-[0%] w-full max-w-md h-[1px] border border-gray-200 rounded-full  '></hr>
-      <hr className=' absolute top-[0%] w-full max-w-4xl h-[1px] border border-gray-200 rounded-full  '></hr>
 
 {/* 
         <motion.div
