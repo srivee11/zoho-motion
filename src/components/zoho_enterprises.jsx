@@ -10,8 +10,8 @@ import old_ceo from '../assets/old_ceo.jpg'
 export default function () {
   const pulse_anime = {
     animate: {
-      scale: [1, 1.05],
-      opacity: [0.7, 0.9],
+      scale: [1, 1.1],
+      opacity: [0.6, 0.9],
       transition: {
         repeat: Infinity,
         repeatType: 'reverse',
@@ -22,35 +22,61 @@ export default function () {
     }
   }
 
+  const fadein_anime = {
+    initial: {
+      opacity: 0,
+      x: '-100%'
+    },
+    animate: {
+      opacity: 1,
+      x: '0%',
+
+      transition: {
+        type: 'spring',
+        duration: 1.5,
+        bounce: 0.5,
+        delay: 0.5
+      }
+    }
+  }
+
   return (
     <div
       name='zoho_enterprises'
-      className=' overflow-clip relative  mx-auto w-screen max-w-screen-lg h-fit flex flex-col-reverse gap-8  items-center justify-center text-gray-700 px-12 py-16 lg:flex-row lg:gap-16 lg:py-24'
+      className=' relative  mx-auto w-screen max-w-screen-lg h-fit flex flex-col-reverse gap-8  items-center justify-center text-gray-700 px-12 py-16 lg:flex-row lg:gap-16 lg:py-24'
     >
-      <hr className=' absolute top-[0%] w-full max-w-4xl h-[1px] border border-gray-200 rounded-full  '/>
+      <hr className=' absolute top-[0%] w-full max-w-4xl h-[1px] border border-gray-200 rounded-full  ' />
 
       <motion.div
         variants={pulse_anime}
         animate='animate'
-        className=' mx-auto absolute bottom-[-50%]  left-0 right-0 aspect-square w-[70vmin] bg-teal-500 rounded-full mix-blend-soft-light opacity-90 filter blur-md'
+        className=' mx-auto absolute bottom-[-60%]  left-0 right-0 aspect-square w-[60vmin] bg-teal-500 rounded-full mix-blend-soft-light opacity-90 filter blur-md'
       ></motion.div>
       <motion.div
         variants={pulse_anime}
         animate='animate'
-        className=' mx-auto  absolute bottom-[-50%]  left-0 right-0 aspect-square w-[80vmin] bg-emerald-400 rounded-full mix-blend-soft-light opacity-80 filter blur-md'
+        className=' mx-auto  absolute bottom-[-70%]  left-0 right-0 aspect-square w-[80vmin] bg-emerald-400 rounded-full mix-blend-soft-light opacity-80 filter blur-md'
       ></motion.div>
       <motion.div
         variants={pulse_anime}
         animate='animate'
-        className=' mx-auto  absolute bottom-[-50%]  left-0 right-0 aspect-square w-[90vmin] bg-green-300 rounded-full mix-blend-soft-light opacity-70 filter blur-md'
+        className=' mx-auto  absolute bottom-[-70%]  left-0 right-0 aspect-square w-[90vmin] bg-green-300 rounded-full mix-blend-soft-light opacity-70 filter blur-md'
       ></motion.div>
       <motion.div
         variants={pulse_anime}
         animate='animate'
-        className=' mx-auto  absolute bottom-[-50%]  left-0 right-0  aspect-square w-[100vmin] bg-lime-200 rounded-full mix-blend-soft-light opacity-60 filter blur-md'
+        className=' mx-auto  absolute bottom-[-70%]  left-0 right-0  aspect-square w-[100vmin] bg-lime-200 rounded-full mix-blend-soft-light opacity-60 filter blur-md'
       ></motion.div>
 
-      <div className=' relative bg-white border-2 border-gray-200  backdrop-blur-md rounded-2xl shadow-xl h-fit max-w-sm flex flex-col gap-4 justify-center items-center px-4 py-6'>
+      <div className=' mx-auto absolute bottom-0 left-0 h-full w-screen bg-gradient-to-t from-lime-200 to-white mix-blend-soft-light opacity-65 filter blur-sm'></div>
+
+      <motion.div
+        variants={fadein_anime}
+        initial='initial'
+        whileInView='animate'
+        viewport={{ once: true }}
+        className=' relative bg-white border-2 border-gray-200  backdrop-blur-md rounded-2xl shadow-xl h-fit max-w-sm flex flex-col gap-4 justify-center items-center px-4 py-6'
+      >
         <blockquote className=' text-gray-700 relative w-full h-fit py-8 px-8 mx-auto font-medium tracking-wide text-lg  lg:text-xl text-center'>
           With our complete business under control, our productivity is up by
           80% in the last year that we have been using Zoho.
@@ -73,7 +99,7 @@ export default function () {
             <FaChevronRight className=' ml-1' size={16} />
           </span>
         </button>
-      </div>
+      </motion.div>
 
       <div className=' relative w-full  my-6 max-w-md'>
         <h3 className='w-full mb-4 mx-auto text-center capitalize text-2xl font-Mont font-medium tracking-wide text-gray-900 lg:text-3xl lg:text-left'>

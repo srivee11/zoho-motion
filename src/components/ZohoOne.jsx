@@ -17,10 +17,26 @@ import young_ceo from '../assets/young_ceo.jpg'
 export default function () {
  
 
+
+  const pulse_anime = {
+    animate: {
+      scale: [1, 1.05],
+      opacity: [0.5, 0.7],
+      transition: {
+        repeat: Infinity,
+        repeatType: 'reverse',
+        duration: 2,
+        ease: 'easeInOut',
+        delay: 0.05
+      }
+    }
+  }
+
+
   const fadein_anime = {
     initial: {
-      opacity: 1,
-      scale: 0.85
+      opacity: 0,
+      scale: 0.8,
     },
     animate: {
       opacity: 1,
@@ -36,19 +52,7 @@ export default function () {
   }
 
 
-  const pulse_anime = {
-    animate: {
-      scale: [1, 1.05],
-      opacity: [0.5, 0.7],
-      transition: {
-        repeat: Infinity,
-        repeatType: 'reverse',
-        duration: 2,
-        ease: 'easeInOut',
-        delay: 0.05
-      }
-    }
-  }
+
 
   return (
     <div

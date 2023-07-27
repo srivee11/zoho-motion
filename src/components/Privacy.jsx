@@ -15,8 +15,8 @@ import {
 
 const pulse_anime = {
   animate: {
-    scale: [1, 1.05],
-    opacity: [0.5, 0.6],
+    scale: [1, 0.9],
+    opacity: [0.5, 0.7],
     transition: {
       repeat: Infinity,
       repeatType: 'reverse',
@@ -30,35 +30,49 @@ const pulse_anime = {
 export default function Privacy () {
   return (
     <div
-      className=' overflow-hidden relative mx-auto w-screen h-fit flex flex-col justify-center items-center '
+      className=' bg-white overflow-hidden relative mx-auto w-screen h-fit flex flex-col justify-center items-center '
       name='privacy'
     >
       <hr className=' absolute bottom-[0%] w-full max-w-md h-[1px] border border-gray-200 rounded-full  '></hr>
       <hr className=' absolute top-[0%] w-full max-w-4xl h-[1px] border border-gray-200 rounded-full  '></hr>
 
-      <motion.div
+{/* 
+        <motion.div
         variants={pulse_anime}
         animate='animate'
-        className=' z-[-1] absolute top-[5vw]  right-[10vw] aspect-square w-full max-w-[20vw] bg-purple-400 rounded-full mix-blend-soft-light opacity-50 filter blur-2xl'
-      ></motion.div>
-      <motion.div
-        variants={pulse_anime}
-        animate='animate'
-        className=' z-[-1] absolute bottom-[5vw] left-[10vw] aspect-square w-full max-w-[25vw] bg-pink-400 rounded-full mix-blend-soft-light opacity-50 filter blur-2xl'
+        className=' z-[-1] absolute bottom-[20vmin] left-[25vmin] aspect-square w-full max-w-[20vmin] bg-rose-500 rounded-full mix-blend-soft-light opacity-50 filter blur-md'
       ></motion.div>
 
+      <motion.div
+        variants={pulse_anime}
+        animate='animate'
+        className=' z-[-1] absolute bottom-[15vmin] left-[20vmin] aspect-square w-full max-w-[30vmin] bg-rose-400 rounded-full mix-blend-soft-light opacity-50 filter blur-md'
+      ></motion.div>
+
+      <motion.div
+        variants={pulse_anime}
+        animate='animate'
+        className=' z-[-1] absolute bottom-[10vmin] left-[15vmin] aspect-square w-full max-w-[40vmin] bg-pink-300 rounded-full mix-blend-soft-light opacity-50 filter blur-md'
+      ></motion.div>
+
+      <motion.div
+        variants={pulse_anime}
+        animate='animate'
+        className=' z-[-1] absolute bottom-[5vmin] left-[10vmin] aspect-square w-full max-w-[50vmin] bg-fuchsia-200 rounded-full mix-blend-soft-light opacity-50 filter blur-lg'
+      ></motion.div> */}
+
       <div className=' mx-auto max-w-screen-lg w-full h-fit px-4 my-12 lg:my-12'>
-        <h3 className=' capitalize text-center text-2xl font-Mont font-medium tracking-wide text-gray-900 mt-8 mb-6 sm:text-3xl md:mt-32  '>
+        <h3 className=' capitalize text-center text-2xl font-Mont font-medium tracking-wide text-gray-900 mt-8 mb-6 sm:text-3xl md:mt-28  '>
           Privacy & Values
         </h3>
 
         <div className=' mx-auto w-full h-fit flex flex-col justify-center items-center text-center  lg:flex-row lg:flex-wrap '>
           <div className=' privacy-card '>
             <span className='privacy-icon'>
-              <FiLock size={56} strokeWidth={1}  />
+              <FiLock size={56} strokeWidth={1} />
             </span>
             <p className='privacy-title'>Privacy</p>
-            <hr className=' mt-1 w-[30%] h-[1px] border border-gray-200 rounded-full  '/>
+            <hr className=' mt-1 w-[30%] h-[1px] border border-gray-200 rounded-full  ' />
 
             <p className='privacy-text'>
               We believe that trust is paramount in a relationship. We do not
@@ -71,9 +85,9 @@ export default function Privacy () {
             <span className='privacy-icon '>
               <FiZap size={56} strokeWidth={1} />
             </span>
-            
+
             <p className='privacy-title'>Customer-First Philosophy</p>
-            <hr className=' mt-1 w-[30%] h-[1px] border border-gray-200 rounded-full  '/>
+            <hr className=' mt-1 w-[30%] h-[1px] border border-gray-200 rounded-full  ' />
 
             <p className='privacy-text'>
               In all these years, it's our customers' trust and goodwill that
@@ -87,7 +101,7 @@ export default function Privacy () {
               <FiAnchor size={56} strokeWidth={1} />
             </span>
             <p className='privacy-title'>Long-Term Commitment</p>
-            <hr className=' mt-1 w-[30%] h-[1px] border border-gray-200 rounded-full  '/>
+            <hr className=' mt-1 w-[30%] h-[1px] border border-gray-200 rounded-full  ' />
 
             <p className='privacy-text'>
               25 years of running a profitable organization gives us a good
@@ -99,14 +113,15 @@ export default function Privacy () {
 
           <div className='privacy-card'>
             <span className=' privacy-icon '>
-              <FiAnchor size={56} strokeWidth={1} />
+              <FiCpu size={56} strokeWidth={1} />
             </span>
             <p className='privacy-title'>Focus On Research</p>
-            <hr className=' mt-1 w-[30%] h-[1px] border border-gray-200 rounded-full  '/>
+            <hr className=' mt-1 w-[30%] h-[1px] border border-gray-200 rounded-full  ' />
 
             <p className='privacy-text'>
-            software is our craft and we back it up with 
-            our relentless investments in R&D. So much so that we prefer to own the entire technology stack, including running our data centers globally.
+              software is our craft and we back it up with our relentless
+              investments in R&D. So much so that we prefer to own the entire
+              technology stack, including running our data centers globally.
             </p>
           </div>
 

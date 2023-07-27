@@ -36,7 +36,7 @@ h6 {
 *::before,
 *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  border: 1pt solid rgba(255, 0, 0, 0.5) !important;  
+  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important;   */
 }
 
 @layer base {

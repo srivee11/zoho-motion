@@ -19,12 +19,15 @@ export default function FeaturedApps () {
       transition: {
         repeat: Infinity,
         repeatType: 'reverse',
-        duration: 2,
+        duration: 2 ,
         ease: 'easeInOut',
-        delay: 0.05,
+        delay: 0.5,
       }
     }
   }
+
+
+  
 
   const cardVariants = {
     initial: {
@@ -127,16 +130,19 @@ export default function FeaturedApps () {
       <motion.div
         variants={pulse_anime}
         animate='animate'
+      
         className=' mx-auto absolute top-[-50%] left-0 right-0 aspect-square w-screen max-w-[60vmin] bg-violet-700 rounded-full mix-blend-soft-light opacity-80 filter blur-md'
       ></motion.div>
       <motion.div
         variants={pulse_anime}
         animate='animate'
+       
         className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-screen max-w-[80vmin] bg-indigo-600 rounded-full mix-blend-soft-light opacity-90 filter blur-md'
       ></motion.div>
       <motion.div
         variants={pulse_anime}
         animate='animate'
+        
         className=' mx-auto absolute top-[-60%] left-0 right-0 aspect-square w-screen max-w-[90vmin] bg-blue-500 rounded-full mix-blend-soft-light opacity-60 filter blur-md'
       ></motion.div>
       <motion.div
