@@ -30,7 +30,7 @@ export default function Home () {
   }
 
   const float_anime = {
-    initial: {},
+    initial: { },
     animate: {
       y: ['-2vmin', '1vmin'],
       transition: {
@@ -77,16 +77,19 @@ export default function Home () {
           variants={float_anime}
           initial='initial'
           animate='animate'
-          className=' mx-auto rounded-2xl overflow-clip w-[60%] md:w-[40%] '
+          className=' cursor-pointer relative z-[-1] mx-auto rounded-2xl  w-[60%] md:w-[40%] '
         >
           <motion.img
             variants={tap_block_anime}
             initial='initial'
             animate='animate'
             whileTap={{
+              scale: 0.8,
               rotate: [0, 90, 180, 270, 360],
-              transition: { duration: 1.5, delay:0.08, ease: 'easeInOut' }
+              transition: { duration: 1.5, delay:0.3 ,ease: 'easeInOut' }
             }}
+
+          
             src={HeroImage}
             alt='my zoho3d'
           ></motion.img>
