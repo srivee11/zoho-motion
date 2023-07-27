@@ -97,17 +97,16 @@ export default function Privacy () {
             </p>
           </div>
 
-          <div className=' privacy-card'>
-            <span className='privacy-icon'>
-              <FiCpu size={56} strokeWidth={1} />
+          <div className='privacy-card'>
+            <span className=' privacy-icon '>
+              <FiAnchor size={56} strokeWidth={1} />
             </span>
             <p className='privacy-title'>Focus On Research</p>
             <hr className=' mt-1 w-[30%] h-[1px] border border-gray-200 rounded-full  '/>
 
             <p className='privacy-text'>
-              Software is our craft and we back it up with our relentless
-              investments in R&D. So much so that we prefer to own the entire
-              technology stack, including running our data centers globally.
+            software is our craft and we back it up with 
+            our relentless investments in R&D. So much so that we prefer to own the entire technology stack, including running our data centers globally.
             </p>
           </div>
 
