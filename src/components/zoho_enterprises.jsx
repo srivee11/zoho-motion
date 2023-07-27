@@ -78,10 +78,13 @@ export default function () {
           viewport={{ once: true }}
           className=' relative bg-white border-2 border-gray-200  backdrop-blur-md rounded-2xl shadow-xl h-fit max-w-sm flex flex-col gap-4 justify-center items-center px-4 py-6'
         >
-          <blockquote className=' text-gray-700 relative w-full h-fit py-8 px-8 mx-auto font-medium tracking-wide text-lg  lg:text-xl text-center'>
+          <blockquote className=' text-gray-700 relative w-full h-fit py-8 px-8 mx-auto font-medium tracking-wide text-lg  lg:text-xl text-center '>
             With our complete business under control, our productivity is up by
             80% in the last year that we have been using Zoho.
           </blockquote>
+    
+
+        
 
           <div className=' flex flex-row gap-3 md:self-center'>
             <div className=' w-[30%] max-w-[128px] rounded-xl border-2 border-gray-100 overflow-clip '>

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -46,12 +48,10 @@ h6 {
 }
 
 @layer components {
-
   .primary-btn-black {
     @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse  text-white bg-gray-800 border-gray-800 transition-all;
   }
 
-  
   .secondary-btn-black {
     @apply flex items-center w-fit px-4 py-2 font-medium rounded-md cursor-pointer capitalize border-2 border-collapse text-gray-900 border-gray-800 bg-white transition-all;
   }
@@ -84,42 +84,55 @@ h6 {
   }
 
   .footer-container-styles {
-
     @apply rounded-2xl border-2 border-gray-200 shadow-lg bg-white;
-
   }
 
   .footer-list-title {
-
     @apply capitalize text-gray-500 text-left text-base lg:text-lg font-Mont font-medium tracking-wide mt-4 mb-3 sm:text-xl;
-
   }
 
   .footer-links {
-
-    @apply capitalize cursor-pointer text-left text-sm lg:text-base  text-gray-400 hover:text-main/90 ;
-
+    @apply capitalize cursor-pointer text-left text-sm lg:text-base  text-gray-400 hover:text-main/90;
   }
 
   .footer-icon {
     @apply text-slate-500 hover:scale-110 transition-transform duration-300;
   }
-
 }
 
 blockquote::before {
+  font-family: 'Lexend', sans-serif;
+
   content: open-quote;
   /* Place it at the top-left */
   top: 0;
   left: 0;
+
+  transition:  transform 0.8s ease-in-out;
+
+
 }
 
 blockquote::after {
+  font-family: 'Lexend', sans-serif;
+
   content: close-quote;
   /* Place it at thee bottom-right */
   bottom: 0;
   right: 0;
+
+  transition:  transform 0.3s ease-in-out;
 }
+
+ blockquote:hover:after {
+  transform: scale(1.15) rotate(8deg);
+}
+
+
+blockquote:hover::before {
+  transform: scale(1.15) rotate(-8deg);
+}
+
 
 blockquote::before,
 blockquote::after {
@@ -149,7 +162,6 @@ blockquote::after {
   /* z-index: -1; */
 }
 
-
 .scroll-parent-one {
   width: 1229.82px;
   height: 48px;
@@ -163,7 +175,6 @@ blockquote::after {
 }
 
 .scroll-element-one {
-  
   width: 1229.82px;
   height: 48px;
 
@@ -174,7 +185,6 @@ blockquote::after {
   height: 100%;
 
   opacity: 0.5;
-
 }
 
 .primary-for-one {
@@ -228,7 +238,6 @@ blockquote::after {
   height: 100%;
 
   opacity: 0.5;
-
 }
 
 .primary-for-two {

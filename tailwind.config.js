@@ -9,7 +9,8 @@ export default {
 
     fontFamily: {
       
-      Mont : ["Montserrat"]
+      Mont : ["Montserrat"],
+      Lex : ["Lexend"]
 
     },
     extend: {
