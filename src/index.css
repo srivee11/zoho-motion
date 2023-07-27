@@ -108,20 +108,24 @@ blockquote::before {
   top: 0;
   left: 0;
 
-  transition:  transform 0.8s ease-in-out;
+  transform-origin: right;
+
+
+  transition:  transform 0.2s ease-in-out;
 
 
 }
 
 blockquote::after {
   font-family: 'Lexend', sans-serif;
-
   content: close-quote;
   /* Place it at thee bottom-right */
   bottom: 0;
   right: 0;
 
-  transition:  transform 0.3s ease-in-out;
+  transform-origin: left;
+
+  transition:  transform 0.2s ease-in-out;
 }
 
  blockquote:hover:after {
