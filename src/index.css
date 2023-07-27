@@ -36,7 +36,7 @@ h6 {
 *::before,
 *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important;   */
+  border: 1pt solid rgba(255, 0, 0, 0.5) !important;  
 }
 
 @layer base {
@@ -91,13 +91,13 @@ h6 {
 
   .footer-list-title {
 
-    @apply capitalize text-gray-500 text-left text-lg font-Mont font-medium tracking-wide mt-4 mb-3 sm:text-xl;
+    @apply capitalize text-gray-500 text-left text-base lg:text-lg font-Mont font-medium tracking-wide mt-4 mb-3 sm:text-xl;
 
   }
 
   .footer-links {
 
-    @apply capitalize cursor-pointer text-left text-base  text-gray-400 hover:text-main/90 ;
+    @apply capitalize cursor-pointer text-left text-sm lg:text-base  text-gray-400 hover:text-main/90 ;
 
   }
 

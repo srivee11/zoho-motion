@@ -25,12 +25,12 @@ const pulse_anime = {
 export default function Footer () {
   return (
     <div className=' relative w-screen h-fit mx-auto flex flex-col justify-center items-center bg-gradient-to-t from-cyan-50 to-white text-gray-700 p-6'>
-      <div className=' w-full max-w-screen-lg grid grid-cols-4 grid-rows-4 gap-6 '>
-        <div className='footer-container-styles col-span-4 row-span-2 flex flex-col gap-3 justify-center items-center py-8 px-6'>
-          <p className=' text-main font-Mont capitalize mt-6 text-2xl tracking-[-1px] font-semibold md:text-4xl lg:text-3xl'>
+      <div className=' w-full max-w-screen-lg grid grid-cols-4 grid-rows-4 gap-4 lg:gap-6 '>
+        <div className='footer-container-styles col-span-4 lg:col-span-4 lg:row-span-2 flex flex-col gap-3 justify-center items-center px-4 py-3 lg:py-8 lg:px-6'>
+          <p className=' text-main/90 font-Mont capitalize mt-6 text-xl tracking-[-1px] font-semibold md:text-4xl lg:text-3xl'>
             Ready to do your best work?
           </p>
-          <p className=' text-xl capitalize tracking-wider  text-gray-500'>
+          <p className=' text-lg lg:text-xl capitalize tracking-wider  text-gray-500'>
             Let's get you started
           </p>
           <button className='group primary-btn-black mt-3 mb-6'>
@@ -41,7 +41,7 @@ export default function Footer () {
           </button>
         </div>
 
-        <div className='footer-container-styles  col-span-2 row-span-2 flex flex-row gap-8 justify-center items-start py-6 px-6 '>
+        <div className='footer-container-styles col-span-4  lg:col-span-2 lg:row-span-2 flex flex-row gap-4 lg:gap-8 justify-center items-start px-4 py-4  lg:py-6 lg:px-6 '>
           <span>
             <span className=' flex flex-col'>
               <p className=' footer-list-title '>Apps</p>
@@ -72,7 +72,7 @@ export default function Footer () {
           </span>
         </div>
 
-        <div className='footer-container-styles group col-span-1 row-span-2 flex justify-center items-start py-6 px-6 '>
+        <div className='footer-container-styles group col-span-2 lg:col-span-1 lg:row-span-2 flex justify-center items-start  px-4 py-4 lg:py-6 lg:px-6 '>
 
         
             <span className=' flex flex-col'>
@@ -86,7 +86,7 @@ export default function Footer () {
 
         </div>
 
-        <div className='footer-container-styles col-span-1 row-span-2  flex flex-col gap-2  justify-start items-center py-6 px-6 '>
+        <div className='footer-container-styles col-span-2 lg:col-span-1 lg:row-span-2  flex flex-col gap-2  justify-start items-center  px-4 py-4 lg:py-6 lg:px-6 '>
           <p className=' footer-list-title '>follow us</p>
 
           <span className=' footer-icon '>
