@@ -89,13 +89,13 @@ export default function Footer () {
         <div className='footer-container-styles col-span-2 lg:col-span-1 lg:row-span-2  flex flex-col gap-2  justify-start items-center  px-4 py-4 lg:py-6 lg:px-6 '>
           <p className=' footer-list-title '>follow us</p>
 
-          <span className=' footer-icon '>
+          <span className='  footer-icon cursor-pointer'>
             <BsLinkedin size={32} />
           </span>
-          <span className=' footer-icon '>
+          <span className=' footer-icon cursor-pointer'>
             <BsTwitter size={32} />
           </span>
-          <span className=' footer-icon '>
+          <span className=' footer-icon cursor-pointer'>
             <BsYoutube size={32} />
           </span>
         </div>

@@ -82,10 +82,10 @@ export default function Home () {
           <h2 className=' overflow-clip  text-gray-800 font-Mont capitalize mt-6 text-2xl tracking-[-1px] font-bold md:text-4xl lg:text-4xl'>
             Your life's work, powered by our life's work
           </h2>
-          <p className=' overflow-clip  text-gray-600  w-full py-4 text-xl md:text-2xl lg:text-2xl lg: max-w-[600px]'>
+          <p className=' overflow-clip  text-gray-700  w-full py-4 text-xl md:text-2xl lg:text-2xl lg:max-w-[600px]'>
             Powerful software suite to transform the way you work. Designed for
             businesses of all sizes, built by a company that
-            <span className=' font-medium hover:text-main/80 transition-colors duration-300'> values your privacy.</span>
+            <span className=' cursor-pointer font-medium hover:text-main/80 transition-colors duration-300'> values your privacy.</span>
           </p>
 
           <div className='flex flex-col items-center gap-4 sm:flex-row sm:self-start sm:justify-center '>
