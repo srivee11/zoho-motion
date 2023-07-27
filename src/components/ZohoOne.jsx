@@ -37,14 +37,16 @@ export default function () {
     initial: {
       opacity: 0,
       scale: 0.8,
+      y:"10%"
     },
     animate: {
       opacity: 1,
       scale: 1,
+      y:"0%",
 
       transition: {
         type: 'spring',
-        duration: 1.5,
+        duration: 1,
         bounce: 0.5,
         delay: 0.5
       }
