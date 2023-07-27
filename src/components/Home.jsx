@@ -1,14 +1,34 @@
 import { React, useRef } from 'react'
 
-
-import { animate, motion, useCycle, useInView } from 'framer-motion'
+import {
+  animate,
+  delay,
+  easeInOut,
+  motion,
+  useCycle,
+  useInView
+} from 'framer-motion'
 
 import { FaChevronRight } from 'react-icons/fa'
 
 import HeroImage from '../assets/main icons/3d blocks.png'
 
-
 export default function Home () {
+  const tap_block_anime = {
+    initial: {},
+    animate: {
+      scale: [1, 0.95],
+      transition: {
+        repeat: Infinity,
+        repeatType: 'reverse',
+        duration: 2,
+        ease: 'easeInOut',
+        when: 'afterChildren',
+        delay: 1.5
+      }
+    }
+  }
+
   const float_anime = {
     initial: {},
     animate: {
@@ -18,24 +38,8 @@ export default function Home () {
         repeatType: 'reverse',
         duration: 2,
         ease: 'easeInOut',
-        when: "afterChildren",
+        when: 'afterChildren',
         delay: 1.5
-      }
-    }
-  }
-
-  const slide_in_from_right = {
-    initial: {
-      x: '-100vw'
-    },
-    animate: {
-      x: '0',
-
-      transition: {
-        type: 'spring',
-        delay: 1,
-        duration: 1.5,
-        ease: 'easeIn'
       }
     }
   }
@@ -75,7 +79,17 @@ export default function Home () {
           animate='animate'
           className=' mx-auto rounded-2xl overflow-clip w-[60%] md:w-[40%] '
         >
-          <img src={HeroImage} alt='my zoho3d'></img>
+          <motion.img
+            variants={tap_block_anime}
+            initial='initial'
+            animate='animate'
+            whileTap={{
+              rotate: [0, 90, 180, 270, 360],
+              transition: { duration: 1.5, delay:0.08, ease: 'easeInOut' }
+            }}
+            src={HeroImage}
+            alt='my zoho3d'
+          ></motion.img>
         </motion.div>
 
         <div className=' flex flex-col  gap-2 justify-center h-full md:w-[60%] '>
@@ -85,7 +99,10 @@ export default function Home () {
           <p className=' overflow-clip  text-gray-700  w-full py-4 text-xl md:text-2xl lg:text-2xl lg:max-w-[600px]'>
             Powerful software suite to transform the way you work. Designed for
             businesses of all sizes, built by a company that
-            <span className=' cursor-pointer font-medium hover:text-main/80 transition-colors duration-300'> values your privacy.</span>
+            <span className=' cursor-pointer font-medium hover:text-main/80 transition-colors duration-300'>
+              {' '}
+              values your privacy.
+            </span>
           </p>
 
           <div className='flex flex-col items-center gap-4 sm:flex-row sm:self-start sm:justify-center '>
@@ -102,7 +119,6 @@ export default function Home () {
                 <FaChevronRight className=' ml-1' size={16} />
               </span>
             </button>
-
           </div>
         </div>
       </motion.div>
