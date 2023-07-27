@@ -38,7 +38,7 @@ h6 {
 *::before,
 *::after {
   /* background-color: rgba(0,0,0,0.5) !important; */
-  /* border: 1pt solid rgba(255, 0, 0, 0.5) !important;   */
+  border: 1pt solid rgba(255, 0, 0, 0.5) !important;  
 }
 
 @layer base {
@@ -111,7 +111,7 @@ blockquote::before {
   transform-origin: right;
 
 
-  transition:  transform 0.2s ease-in-out;
+  transition:  transform 0.3s ease-in-out;
 
 
 }
@@ -125,16 +125,16 @@ blockquote::after {
 
   transform-origin: left;
 
-  transition:  transform 0.2s ease-in-out;
+  transition:  transform 0.3s ease-in-out;
 }
 
  blockquote:hover:after {
-  transform: scale(1.15) rotate(8deg);
+  transform: scale(1.05) rotate(8deg);
 }
 
 
 blockquote:hover::before {
-  transform: scale(1.15) rotate(-8deg);
+  transform: scale(1.05) rotate(-8deg);
 }
 
 

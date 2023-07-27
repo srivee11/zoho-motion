@@ -106,7 +106,7 @@ export default function () {
           efficiency.
         </p>
 
-        <blockquote className=' text-gray-700 relative w-full h-fit py-8 px-8 mx-auto font-medium tracking-wide text-lg  lg:text-xl text-center'>
+        <blockquote className=' text-gray-700 relative w-full h-fit py-8 px-8 mx-auto font-medium tracking-wide text-lg  lg:text-xl text-center hover:scale-105 duration-500'>
           You can be a startup, a SMB or an enterprise—Zoho One is a boon for
           all
         </blockquote>

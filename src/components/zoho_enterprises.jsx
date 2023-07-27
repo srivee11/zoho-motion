@@ -70,7 +70,7 @@ export default function () {
 
       <div className=' mx-auto absolute bottom-0 left-0 h-full w-screen bg-gradient-to-t from-lime-100 to-white mix-blend-soft-light opacity-70 filter blur-sm'></div>
 
-      <div className=' relative  mx-auto w-full max-w-screen-lg flex flex-col-reverse gap-8  items-center justify-center text-gray-700 px-12 py-16 lg:flex-row lg:gap-16 lg:py-24'>
+      <div className=' relative  w-full max-w-screen-lg flex flex-col-reverse gap-8  items-center justify-center text-gray-700 px-12 py-16 lg:flex-row lg:gap-16 lg:px-24 lg:py-24'>
         <motion.div
           variants={fadein_anime}
           initial='initial'
@@ -78,7 +78,7 @@ export default function () {
           viewport={{ once: true }}
           className=' relative bg-white border-2 border-gray-200  backdrop-blur-md rounded-2xl shadow-xl h-fit max-w-sm flex flex-col gap-4 justify-center items-center px-4 py-6'
         >
-          <blockquote className=' text-gray-700 relative w-full h-fit py-8 px-8 mx-auto font-medium tracking-wide text-lg  lg:text-xl text-center '>
+          <blockquote className=' text-gray-700 relative w-full h-fit py-8 px-8 mx-auto font-medium tracking-wide text-lg  lg:text-xl text-center hover:scale-105 duration-500 '>
             With our complete business under control, our productivity is up by
             80% in the last year that we have been using Zoho.
           </blockquote>
